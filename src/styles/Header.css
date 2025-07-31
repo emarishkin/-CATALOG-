@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #252525;
+  color: #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+}
+
+.logo-firm {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+}
+
+.logo-firm:hover {
+  transform: scale(1.05);
+}
+
+.search-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 2rem;
+  max-width: 100%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d;
+  border-radius: 20px;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.2s;
+}
+
+.search-form:hover {
+    box-shadow: 0 0 0 2px #4d4d4d;
+}
+
+.search-form input {
+    background: transparent;
+    border: none;
+    color: #e0e0e0;
+    margin-left: 0.5rem;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+}
+
+.search-form input::placeholder {
+    color: #8a8a8a;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+/* Иконки аккаунта (сердце и корзина) */
+.account-actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.link-heart img, .link-basket img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.link-heart:hover img, .link-basket:hover img {
+    transform: scale(1.1);
+}
+
+/* Бургер-кнопка (скрыта на десктопе) */
+.burger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.burger-button img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .logo-firm {
+    width: 75px;
+    height: 75px;
+  }
+
+  .search-container {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    display: none;
+    padding: 0 1rem;
+  }
+
+  .search-container.mobile-visible {
+    display: flex;
+  }
+
+  .search-form {
+    border-top: 1px solid #000;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .burger-button {
+    display: block;
+  }
+}
