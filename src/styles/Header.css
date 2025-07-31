@@ -1,46 +1,46 @@
+/* Основные стили для шапки (темная тема) */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #252525;
-  color: #e0e0e0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+/* Логотип (увеличили размер) */
 .logo-firm {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.2s;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
 }
 
 .logo-firm:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
+/* Форма поиска (расширили) */
 .search-container {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  margin: 0 2rem;
-  max-width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 2rem;
 }
 
 .search-form {
-  display: flex;
-  align-items: center;
-  background-color: #2d2d2d;
-  border-radius: 20px;
-  height: 50px;
-  padding: 0.5rem 1rem;
-  width: 100%;
-  max-width: 400px;
-  transition: box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    width: 400px;
+    max-width: 100%;
+    transition: box-shadow 0.2s;
 }
 
 .search-form:hover {
@@ -84,13 +84,17 @@
     transform: scale(1.1);
 }
 
-/* Бургер-кнопка (скрыта на десктопе) */
 .burger-button {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+.burger-button.active {
+    transform: rotate(90deg);
 }
 
 .burger-button img {
@@ -98,38 +102,40 @@
     height: 40px;
 }
 
+/* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
-  .header {
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 20px;
-  }
+    .header {
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1rem;
+    }
 
-  .logo-firm {
-    width: 75px;
-    height: 75px;
-  }
+    .logo-firm {
+        width: 75px;
+        height: 75px;
+    }
 
-  .search-container {
-    order: 3;
-    width: 100%;
-    margin: 0;
-    display: none;
-    padding: 0 1rem;
-  }
+    .search-container {
+        order: 3; /* Перемещаем поиск вниз */
+        width: 100%;
+        margin: 0;
+        display: none; /* По умолчанию скрыт */
+    }
 
-  .search-container.mobile-visible {
-    display: flex;
-  }
+    .search-container.mobile-visible {
+        display: flex; /* Показываем при клике на бургер */
+    }
 
-  .search-form {
-    border-top: 1px solid #000;
-    height: 50px;
-    width: 100%;
-    max-width: 100%;
-  }
+    .search-form {
+        height: 50px;
+        width: 100%;
+    }
 
-  .burger-button {
-    display: block;
-  }
+    .burger-button {
+        display: block; /* Показываем бургер */
+        order: 1;
+    }
+
+    
+
 }

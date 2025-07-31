@@ -1,20 +1,25 @@
-/* SideBar.css */
+.sidebar {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 140px);
+    align-self: flex-start;
+    margin: 20px 0 20px 20px;
+    flex: 0 0 280px;
+    z-index: 999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .sidebar-section {
-    width: 250px;
-    min-width: 250px;
-    height: calc(100vh - 40px);
+    width: 280px;
+    height: 100%;
     background-color: #1e1e1e;
     padding: 20px;
     color: #e0e0e0;
-    border-radius: 16px;
-    margin: 20px 0 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: sticky;
-    top: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border: 1px solid #333;
+    overflow-y: auto;
+    border-radius: 12px;
 }
 
 .user-sidebar {
@@ -24,6 +29,7 @@
     padding: 15px;
     border-radius: 12px;
     background-color: #252525;
+    margin-top: 10px;
 }
 
 .user-avatar {
@@ -117,4 +123,39 @@
     width: 22px;
     height: 22px;
     object-fit: contain;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 230px; /* Располагаем ниже хедера */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        transform: translateY(100%); /* Теперь двигаем по вертикали */
+        opacity: 0;
+        height: calc(100vh - 120px); /* Высота минус хедер */
+        width: 100%; /* На всю ширину */
+        z-index: 999;
+    }
+
+    .sidebar.mobile-visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .sidebar-section {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+        margin-top: -7px;
+    }
+
+    .user-sidebar {
+        margin-top: 60px;
+    }
 }

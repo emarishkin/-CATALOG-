@@ -8,10 +8,13 @@ import heart from '../../public/HEART.png';
 import basket from '../../public/BAY.png';
 import burger from '../../public/BURGER.png'; 
 import '../styles/Header.css';
+import { useSidebar } from "../Context/SidebarContext";
 
 export const Header: FC = () => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [searchValue, setSearchValue] = useState("");
+    
+    const {toggleSidebar,isSidebarOpen} = useSidebar()
 
     const toggleSearch = () => {
         setIsSearchVisible(!isSearchVisible);
@@ -57,7 +60,10 @@ export const Header: FC = () => {
                 </div>
             </div>
 
-            <button className="burger-button" onClick={toggleSearch}>
+            <button className={`burger-button ${isSidebarOpen ? 'active' : ''}`} onClick={()=>{
+                toggleSearch()
+                toggleSidebar()
+            }}>
                 <img src={burger} alt="Меню" />
             </button>
 

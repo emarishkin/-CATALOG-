@@ -2,30 +2,36 @@ import type { FC } from "react";
 import { Link } from "react-router-dom";
 import homeLink from '../../public/HomeSideBar.png'
 import '../styles/SideBar.css'
+import avatar from '../../public/GUEST.png'
+import info from '../../public/INFO-sidebar.png'
 import { categories } from "../data";
 import { ROUTES } from "../utils/routes";
+import { useSidebar } from "../Context/SidebarContext";
 
 interface SideBarProps {}
 
 export const SideBar: FC<SideBarProps> = () => {
+    const {isSidebarOpen, closeSidebar} = useSidebar()
+
     return (
+    <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
         <section className="sidebar-section"> 
             <div className="user-sidebar">
-                <img className="user-avatar" src="user" alt="Аватар пользователя" />
-                <h2>User Name</h2>
+                <img className="user-avatar" src={avatar} alt="Аватар пользователя" />
+                <h2>Марик</h2>
             </div>
             
             <div className="sidebar-category">
                 <div className="home-sedebar">
-                    <Link to={ROUTES.HOME}>
+                    <Link to={ROUTES.HOME} onClick={closeSidebar}>
                         <img src={homeLink} alt="Иконка дом" />
                         <h2>Главная</h2>
                     </Link>
                 </div>
 
                 <div className="info-sedebar">
-                    <Link to={ROUTES.INFO}>
-                        <img src={homeLink} alt="Иконка информации" />
+                    <Link to={ROUTES.INFO} onClick={closeSidebar}>
+                        <img src={info} alt="Иконка информации" />
                         <h2>О нас</h2>
                     </Link>
                 </div>
@@ -36,6 +42,7 @@ export const SideBar: FC<SideBarProps> = () => {
                         <Link
                             key={category.id}
                             to={`/categories/${category.id}`}
+                            onClick={closeSidebar}
                         >
                             <img src={category.icon} alt='иконка категории' />
                             <span>{category.name}</span>
@@ -44,5 +51,6 @@ export const SideBar: FC<SideBarProps> = () => {
                 </div>
             </div>
         </section>
+    </div>
     )
 }
