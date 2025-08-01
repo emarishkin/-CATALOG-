@@ -17,16 +17,16 @@ interface ProductCardProps {
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
 
-    const { isFavotite , addToFavotites , deleteFromFavotites} = useFavorites()
+    const { isFavorite , addToFavorites , deleteFromFavorites} = useFavorites()
 
-    const isFav = isFavotite(product.id)
+    const isFav = isFavorite(product.id)
 
     const handleFavoriteClick = (e:React.MouseEvent) => {
         e.stopPropagation()
         if(isFav){
-            deleteFromFavotites(product.id)
+            deleteFromFavorites(product.id)
         } else {
-            addToFavotites(product)
+            addToFavorites(product)
         }
     }
 

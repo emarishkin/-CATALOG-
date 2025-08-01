@@ -3,36 +3,36 @@ import type { IProduct } from "../types";
 
 interface FavoritesContextType{
     favorites:IProduct[]
-    addToFavotites:(product:IProduct)=>void
-    deleteFromFavotites:(productId:number)=>void
-    isFavotite:(productId:number)=>boolean
+    addToFavorites:(product:IProduct)=>void
+    deleteFromFavorites:(productId:number)=>void
+    isFavorite:(productId:number)=>boolean
 }
 
 const FavoritesContext = createContext<FavoritesContextType>({
     favorites:[],
-    addToFavotites:()=>{},
-    deleteFromFavotites:()=>{},
-    isFavotite:()=>false
+    addToFavorites:()=>{},
+    deleteFromFavorites:()=>{},
+    isFavorite:()=>false
 })
 
  export const FavoritesProvider:FC<{children:ReactNode}> = ({children}) => {
 
     const [favorites,setFavorites] = useState<IProduct[]>([])
 
-    const addToFavotites = (product:IProduct) => {
+    const addToFavorites = (product:IProduct) => {
      setFavorites(prev=>[...prev,product])
     }
 
-    const deleteFromFavotites = (productId:number) => {
+    const deleteFromFavorites = (productId:number) => {
       setFavorites(prev=>prev.filter(item=>item.id !== productId))
     }
 
-    const isFavotite = (productId:number) => {
+    const isFavorite = (productId:number) => {
       return favorites.some(item => item.id === productId)
     }
 
     return (
-        <FavoritesContext.Provider value={{favorites,addToFavotites,deleteFromFavotites,isFavotite}}>
+        <FavoritesContext.Provider value={{favorites,addToFavorites,deleteFromFavorites,isFavorite}}>
             {children}
         </FavoritesContext.Provider>
     )
