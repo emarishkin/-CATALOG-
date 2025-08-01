@@ -33,7 +33,7 @@ export const Header: FC = () => {
             </div>
 
 
-            <div className={`search-container ${isSearchVisible ? "mobile-visible" : ""}`}>
+            <div className={`search-container `}>
                 <form className="search-form" onClick={(e) => e.stopPropagation()}>
                     <img src={searchIcon} alt="Иконка поиска" className="search-icon" />
                     <input

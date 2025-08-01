@@ -125,25 +125,24 @@
     object-fit: contain;
 }
 
-/* Мобильные стили */
 @media (max-width: 768px) {
     .sidebar {
         position: fixed;
-        top: 230px; /* Располагаем ниже хедера */
+        top: 80px; /* Высота мобильного header */
         left: 0;
         right: 0;
         bottom: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
         margin: 0;
-        transform: translateY(100%); /* Теперь двигаем по вертикали */
-        opacity: 0;
-        height: calc(100vh - 120px); /* Высота минус хедер */
-        width: 100%; /* На всю ширину */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
         z-index: 999;
+        opacity: 1; /* Убираем анимацию opacity */
     }
 
     .sidebar.mobile-visible {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateX(0);
     }
 
     .sidebar-section {
@@ -152,10 +151,9 @@
         border-radius: 0;
         padding-top: 20px;
         border-top: 1px solid #333;
-        margin-top: -7px;
     }
 
     .user-sidebar {
-        margin-top: 60px;
+        margin-top: 0; /* Убираем лишний отступ */
     }
 }
