@@ -7,10 +7,14 @@ import info from '../../public/INFO-sidebar.png'
 import { categories } from "../data";
 import { ROUTES } from "../utils/routes";
 import { useSidebar } from "../Context/SidebarContext";
+import { useCategory } from "../Context/CategoryContext";
 
 interface SideBarProps {}
 
 export const SideBar: FC<SideBarProps> = () => {
+
+    const { setSelectedCategory } = useCategory()
+
     const {isSidebarOpen, closeSidebar} = useSidebar()
 
     return (
@@ -42,7 +46,10 @@ export const SideBar: FC<SideBarProps> = () => {
                         <Link
                             key={category.id}
                             to={`/categories/${category.id}`}
-                            onClick={closeSidebar}
+                            onClick={()=>{
+                                closeSidebar()
+                                setSelectedCategory(category.id);
+                            }}
                         >
                             <img src={category.icon} alt='иконка категории' />
                             <span>{category.name}</span>

@@ -31,15 +31,15 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                 />
             </NavLink>
             
-                <button 
-                    className="favorite-button"
-                >
-                    <img 
-                        src={heart} 
-                        alt="Избранное" 
-                        className="favorite-icon"
-                    />
-                </button>
+                    <Link to={ROUTES.HEART}>
+                      <button className="favorite-button">
+                        <img 
+                          src={heart} 
+                          alt="Избранное" 
+                          className="favorite-icon"
+                        />
+                      </button>
+                    </Link>
 
             </div>
             
