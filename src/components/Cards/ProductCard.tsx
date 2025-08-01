@@ -7,12 +7,29 @@ import { ROUTES } from "../../utils/routes";
 import '../../styles/ProductCard.css';
 import galochka from '../../../public/GALOCHKA.svg';
 import krestik from '../../../public/KREST.svg';
+import musor from '../../../public/DELETE.svg'
+import { useFavorites } from "../../Context/FavoritesContext";
+
 
 interface ProductCardProps {
     product: IProduct;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+
+    const { isFavotite , addToFavotites , deleteFromFavotites} = useFavorites()
+
+    const isFav = isFavotite(product.id)
+
+    const handleFavoriteClick = (e:React.MouseEvent) => {
+        e.stopPropagation()
+        if(isFav){
+            deleteFromFavotites(product.id)
+        } else {
+            addToFavotites(product)
+        }
+    }
+
     return (
         <div className="product-card">
             <div className="product-image-container">
@@ -31,15 +48,15 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                 />
             </NavLink>
             
-                    <Link to={ROUTES.HEART}>
-                      <button className="favorite-button">
+                    
+                      <button onClick={handleFavoriteClick} className={`favorite-button ${isFav ? 'active' : ''}`}>
                         <img 
-                          src={heart} 
-                          alt="Избранное" 
+                          src={isFav ? musor : heart} 
+                          alt={isFav ? "Удалить из избранного" : "Добавить в избранное"} 
                           className="favorite-icon"
                         />
                       </button>
-                    </Link>
+                    
 
             </div>
             
