@@ -15,7 +15,7 @@ export const CategoryPage:FC = () => {
         {/* <h2>{selectedCategory ? `Товары категории ${selectedCategory}` : "Все товары"}</h2> */}
         <div className="products-grid">
             {filtredProducts.map(product=>(
-                <ProductCard key={product.category.id} product={product} />
+                <ProductCard key={product.id} product={product} />
             ))}
         </div>
       </div>
