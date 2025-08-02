@@ -36,7 +36,7 @@ export const SideBar: FC<SideBarProps> = () => {
                 <div className="info-sedebar">
                     <Link to={ROUTES.INFO} onClick={closeSidebar}>
                         <img src={info} alt="Иконка информации" />
-                        <h2>О нас</h2>
+                        <h2>Компания</h2>
                     </Link>
                 </div>
 

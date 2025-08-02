@@ -9,6 +9,7 @@ import { CategoryPage } from "../Pages/CategoryPage";
 import { FavoritesPage } from "../Pages/HeartPage";
 import { ROUTES } from "../utils/routes";
 import { BasketPage } from "../Pages/BasketPage";
+import { ContactWithYou } from "../components/ContactWithYou";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -31,6 +32,7 @@ export const AppRoutes: FC = () => {
                     </Routes>
                 </div>
             </div>
+            <ContactWithYou />
             <Footer />
         </>
     );
