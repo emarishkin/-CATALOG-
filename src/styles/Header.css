@@ -114,7 +114,28 @@
     display: inline-block;
 }
 
+.basket-link{
+    position: relative;
+    display: inline-block;
+}
+
 .favorites-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff5252;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.basket-count-num{
     position: absolute;
     top: -8px;
     right: -8px;

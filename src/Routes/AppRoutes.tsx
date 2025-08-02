@@ -7,6 +7,8 @@ import { useSidebar } from "../Context/SidebarContext";
 import { HomePage } from "../Pages/HomePage";
 import { CategoryPage } from "../Pages/CategoryPage";
 import { FavoritesPage } from "../Pages/HeartPage";
+import { ROUTES } from "../utils/routes";
+import { BasketPage } from "../Pages/BasketPage";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -25,6 +27,7 @@ export const AppRoutes: FC = () => {
                         <Route index element={<HomePage />} />
                         <Route path="/categories/:id" element={<CategoryPage />} />
                         <Route path="/heart" element={<FavoritesPage />} />
+                        <Route path={ROUTES.BASKET} element={<BasketPage />} />
                     </Routes>
                 </div>
             </div>

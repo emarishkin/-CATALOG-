@@ -10,6 +10,7 @@ import burger from '../../public/BURGER.png';
 import '../styles/Header.css';
 import { useSidebar } from "../Context/SidebarContext";
 import { useFavorites } from "../Context/FavoritesContext";
+import { useBasket } from "../Context/BasketContext";
 
 export const Header: FC = () => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -18,6 +19,7 @@ export const Header: FC = () => {
     const {toggleSidebar,isSidebarOpen} = useSidebar()
 
     const {favoritesCount} = useFavorites()
+    const {basketCountNUM} = useBasket()
 
     const toggleSearch = () => {
         setIsSearchVisible(!isSearchVisible);
@@ -60,6 +62,7 @@ export const Header: FC = () => {
                 <div className="link-basket">
                     <Link to={ROUTES.BASKET} className="basket-link">
                         <img src={basket} alt="Корзина товаров" />
+                        {basketCountNUM > 0 && <span className="basket-count-num">{basketCountNUM}</span>}
                     </Link>
                 </div>
             </div>

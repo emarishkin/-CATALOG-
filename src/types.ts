@@ -15,3 +15,7 @@ export interface IProduct {
   category: ICardCategory;
   images: string[];
 }
+
+export interface ICartItem extends IProduct {
+  quantity: number; 
+}

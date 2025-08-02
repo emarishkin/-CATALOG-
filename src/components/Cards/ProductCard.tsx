@@ -1,14 +1,14 @@
 import type { FC } from "react";
 import type { IProduct } from "../../types";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import heart from '../../../public/HEART.png';
 import basket from '../../../public/BAY.png';
-import { ROUTES } from "../../utils/routes";
 import '../../styles/ProductCard.css';
 import galochka from '../../../public/GALOCHKA.svg';
 import krestik from '../../../public/KREST.svg';
 import musor from '../../../public/DELETE.svg'
 import { useFavorites } from "../../Context/FavoritesContext";
+import { useBasket } from "../../Context/BasketContext";
 
 
 interface ProductCardProps {
@@ -21,6 +21,8 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
 
     const isFav = isFavorite(product.id)
 
+    const { addBasket } = useBasket()
+
     const handleFavoriteClick = (e:React.MouseEvent) => {
         e.stopPropagation()
         if(isFav){
@@ -28,6 +30,11 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         } else {
             addToFavorites(product)
         }
+    }
+
+    const handleAddToCart = (e:React.MouseEvent) => {
+        e.stopPropagation()
+        addBasket(product)
     }
 
     return (
@@ -70,12 +77,13 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                 </div>
                 
                 <div className="header-hight-card-links">
-                    <Link 
-                        to={ROUTES.BASKET} 
+                    <button 
+                        onClick={handleAddToCart}
                         aria-label="Добавить в корзину"
+                        className="basket-button"
                     >
                         <img src={basket} alt="Корзина" />
-                    </Link>
+                    </button>
                 </div>
             </div>
             
