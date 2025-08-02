@@ -9,12 +9,15 @@ import basket from '../../public/BAY.png';
 import burger from '../../public/BURGER.png'; 
 import '../styles/Header.css';
 import { useSidebar } from "../Context/SidebarContext";
+import { useFavorites } from "../Context/FavoritesContext";
 
 export const Header: FC = () => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     
     const {toggleSidebar,isSidebarOpen} = useSidebar()
+
+    const {favoritesCount} = useFavorites()
 
     const toggleSearch = () => {
         setIsSearchVisible(!isSearchVisible);
@@ -51,6 +54,7 @@ export const Header: FC = () => {
                 <div className="link-heart">
                     <Link to={ROUTES.HEART} className="favourites-link">
                         <img src={heart} alt="Понравившиеся товары" />
+                        {favoritesCount > 0 && <span className="favorites-count">{favoritesCount}</span>}
                     </Link>
                 </div>
                 <div className="link-basket">

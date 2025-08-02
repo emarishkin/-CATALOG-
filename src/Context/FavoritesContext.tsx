@@ -3,6 +3,7 @@ import type { IProduct } from "../types";
 
 interface FavoritesContextType{
     favorites:IProduct[]
+    favoritesCount:number
     addToFavorites:(product:IProduct)=>void
     deleteFromFavorites:(productId:number)=>void
     isFavorite:(productId:number)=>boolean
@@ -10,6 +11,7 @@ interface FavoritesContextType{
 
 const FavoritesContext = createContext<FavoritesContextType>({
     favorites:[],
+    favoritesCount:0,
     addToFavorites:()=>{},
     deleteFromFavorites:()=>{},
     isFavorite:()=>false
@@ -18,6 +20,8 @@ const FavoritesContext = createContext<FavoritesContextType>({
  export const FavoritesProvider:FC<{children:ReactNode}> = ({children}) => {
 
     const [favorites,setFavorites] = useState<IProduct[]>([])
+
+    const favoritesCount = favorites.length
 
     const addToFavorites = (product:IProduct) => {
      setFavorites(prev=>[...prev,product])
@@ -32,7 +36,7 @@ const FavoritesContext = createContext<FavoritesContextType>({
     }
 
     return (
-        <FavoritesContext.Provider value={{favorites,addToFavorites,deleteFromFavorites,isFavorite}}>
+        <FavoritesContext.Provider value={{favorites,favoritesCount,addToFavorites,deleteFromFavorites,isFavorite}}>
             {children}
         </FavoritesContext.Provider>
     )
