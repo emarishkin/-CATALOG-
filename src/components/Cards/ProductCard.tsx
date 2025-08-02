@@ -90,7 +90,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
             <div className="main-middle-card">
                 <h3 className="product-title">{product.title}</h3>
                 {product.quantityInLot && (
-                    <p className="product-quantity">Лот: {product.quantityInLot} шт.</p>
+                    <p className="product-quantity">От {product.quantityInLot} шт.</p>
                 )}
             </div>
             
@@ -103,7 +103,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                 </NavLink>
                 <div className="price-container">
                     <span className="price-label">Цена:</span>
-                    <span className="price-value">{product.price}$</span>
+                    <span className="price-value">{product.price}₽</span>
                 </div>
             </div>
         </div>

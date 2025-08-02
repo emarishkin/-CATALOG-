@@ -1,9 +1,6 @@
 import type { ICardCategory, IProduct } from "./types";
 import homik from '../public/HomeSideBar.png'
 
-import Ahmed from '../public/AHMEDDELETE.jpg'
-
-
 export const categories: ICardCategory[] = [
   { id: 1, name: 'Автозапчасти',icon:homik},
   { id: 2, name: 'Выхлопная система',icon:homik},
@@ -14,76 +11,76 @@ export const categories: ICardCategory[] = [
 export const products:IProduct[] = [
   {
     id: 1,
-    title: "aaa",
+    title: "Гофра инжектора 2170 с хомутами 21700-1109175-00",
     rating: 5,
     inStock: true,
-    quantityInLot:500,
-    price: 687,
-    description: "Andy shoes are designed to keeping in...",
+    quantityInLot:20,
+    price: 145,
+    description: "Гофра воздушного фильтра. Предназначена для замены пришедшей в негодность штатной.Размер шланга: длина - 42 см, диаметр - 5 см. Идет в сборе с двумя металлическими хомутами. Подходит для следующих автомобилей: ВАЗ 2101, 2105, 2121, 21213, 2110, 2170",
     category: {
       id: 1,
-      name: "Others",
+      name: "Патрубок воздушный",
       icon: 'icon'
     },
     images: [
-      Ahmed,
-      "http://cdn.ct.sexhoundlinks.com/29/58339/e5d6a63eacfafb93888ab430abd2f6ea/659743.jpg",
-      "https://placehold.co/600x400"
+      "https://avatars.mds.yandex.net/get-mpic/4923482/2a0000019258f2330bf01971a1c93f75a266/orig",
+      "",
+      ""
     ]
   },
   {
     id: 2,
-    title: "bbb",
+    title: "Гофра воздушного фильтра 2110",
     rating: 5,
     inStock: true,
-    quantityInLot:500,
-    price: 687,
-    description: "Andy shoes are designed to keeping in...",
+    quantityInLot:20,
+    price: 60,
+    description: "Воздушный фильтр – одна из самых важных деталей автомобиля. Его основная задача заключается в защите двигателя от попадания вредных частиц, пыли и грязи из воздуха. Однако чтобы фильтр выполнял свою функцию наилучшим образом, наличие гофры становится важным условием его работы. Гофра на воздушном фильтре необходима для увеличения площади поверхности фильтрации. Она создает дополнительные складки и слои материала, которые улавливают и задерживают больше загрязнений. Благодаря гофрированной структуре фильтр становится более эффективным и улучшает качество очистки воздуха, проходящего через него. Еще одним преимуществом гофры на воздушном фильтре является увеличение пропускной способности воздушного потока. Загрязнения задерживаются на поверхности гофр, позволяя чистому воздуху более свободно проникать в двигатель.",
     category: {
-      id: 1,
-      name: "Others",
+      id: 2,
+      name: "Шланг воздушный для автомобиля",
       icon: 'icon'
     },
     images: [
-      Ahmed,
-      "http://cdn.ct.sexhoundlinks.com/29/58339/e5d6a63eacfafb93888ab430abd2f6ea/659743.jpg",
-      "https://placehold.co/600x400"
-    ]
-  },
-  {
-    id: 3,
-    title: "cccc",
-    rating: 5,
-    inStock: true,
-    quantityInLot:500,
-    price: 111687,
-    description: "Andy shoes are designed to keeping in...",
-    category: {
-      id: 3,
-      name: "Others",
-      icon: 'icon'
-    },
-    images: [
-      Ahmed,
+      "https://avatars.mds.yandex.net/get-mpic/12476287/2a0000018db691e0bd3409523a4cba720a68/orig",
       "http://cdn.ct.sexhoundlinks.com/29/58339/e5d6a63eacfafb93888ab430abd2f6ea/659743.jpg",
       "https://placehold.co/600x400"
     ]
   },
   {
     id: 4,
-    title: "Ахмед",
+    title: "Фильтр салонный FG-2190 Lada Kalina/Granta/Niva/Chevrolet/Datsun On-DO mi-DO",
     rating: 5,
     inStock: true,
     quantityInLot:1,
-    price: 1,
-    description: "Andy shoes are designed to keeping in...",
+    price: 140,
+    description: "Салонный фильтр изготовлен из высококачественного сырья на современном высокотехнологичном оборудовании. Данная технология обеспечивает высокое качество и надёжные эксплуатационные характеристики .Данный фильтр применяется для автомобилей семейств : LADA KALINA, LADA GRANTA, NIVA CHEVROLET, DATSUN on-DO, DATSUN mi-DO.",
     category: {
-      id: 2,
-      name: "Others",
+      id: 3,
+      name: "Воздушный фильтр",
       icon: 'icon'
     },
     images: [
-      Ahmed,
+      "https://cdn1.ozone.ru/s3/multimedia-d/c600/6507667117.jpg",
+      "http://cdn.ct.sexhoundlinks.com/29/58339/e5d6a63eacfafb93888ab430abd2f6ea/659743.jpg",
+      "https://placehold.co/600x400"
+    ]
+  },
+  {
+    id: 7,
+    title: "Пробка расширительного бачка 2108-1311065-04(Восток-Амфибия, г. Чистополь)",
+    rating: 5,
+    inStock: true,
+    quantityInLot:1,
+    price: 70,
+    description: "Производитель: ООО «Восток-Амфибия», г. Чистополь ООО «Восток-Амфибия», г. Чистополь, Республика Татарстан - ОФИЦИАЛЬНЫЙ ПОСТАВЩИК НА КОНВЕЙЕР ОАО АВТОВАЗ. Точное соответствие заводским стандартам помогает поддерживать необходимое давление в системе охлаждения, что крайне важно для предотвращения перегрева двигателя. Также это способствует более эффективному теплообмену и продлевает срок службы всего узла.",
+    category: {
+      id: 2,
+      name: "Крышка бачка расширительного",
+      icon: 'icon'
+    },
+    images: [
+      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
       "http://cdn.ct.sexhoundlinks.com/29/58339/e5d6a63eacfafb93888ab430abd2f6ea/659743.jpg",
       "https://placehold.co/600x400"
     ]
