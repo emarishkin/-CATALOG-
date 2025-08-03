@@ -1,9 +1,9 @@
 import { createContext, useContext, useState, type FC, type ReactNode } from "react";
-import type { ICartItem, IProduct } from "../types";
+import type { IProduct } from "../types";
 
 
 interface BasketContextType{
-  basketArray:ICartItem[]
+  basketArray:Array<IProduct & { quantity: number }>
   basketCount:number
   basketTotal:number
   basketCountNUM:number,
@@ -26,7 +26,7 @@ const BasketContext = createContext<BasketContextType>({
 
 export const BasketProvider:FC<{children:ReactNode}> = ({children}) => {
 
-    const [basketArray,setBasketArray] = useState<ICartItem[]>([])
+    const [basketArray,setBasketArray] = useState<Array<IProduct & { quantity: number }>>([])
 
     const basketCount = basketArray.reduce((acc,item)=> acc + item.quantity, 0) 
 

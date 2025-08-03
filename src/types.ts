@@ -14,8 +14,5 @@ export interface IProduct {
   description: string;
   category: ICardCategory;
   images: string[];
-}
-
-export interface ICartItem extends IProduct {
-  quantity: number; 
+  quantity?: number;
 }
