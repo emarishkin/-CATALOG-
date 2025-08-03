@@ -40,6 +40,13 @@ export const SideBar: FC<SideBarProps> = () => {
                     </Link>
                 </div>
 
+                <div className="info-sedebar">
+                    <Link to={ROUTES.CONTACTS} onClick={closeSidebar}>
+                        <img src={info} alt="Иконка информации" />
+                        <h2>Контакты</h2>
+                    </Link>
+                </div>
+
                 <div className="category-title">Категории</div>
                 <div className="category-items">
                     {categories.map(category => (

@@ -1,0 +1,210 @@
+/* Основные стили футера */
+.company-info-footer {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+/* Блок контактов */
+.contacts-info-block {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Элементы контактов */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 12px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    color: #0066cc;
+}
+
+.phone-icon {
+    padding: 1px;
+}
+
+.place-icon {
+    padding: 2px;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.phone-link {
+    color: #4dabf7;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.phone-link:hover {
+    color: #74c0fc;
+    text-decoration: underline;
+}
+
+/* Социальные сети */
+.social-links-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-text-footer {
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+.social-footer{
+    display: flex;
+    gap: 10px;
+}
+
+.tg-icon {
+    width: 40px;
+    height: 40px;
+}
+.vkont-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Блок карты */
+.map-block {
+    flex: 1;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: #f1f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-block::before {
+    content: 'Загрузка карты...';
+    position: absolute;
+    color: #666;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.map-iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    transition: opacity 0.3s;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .company-info-footer {
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .map-block {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-info-footer {
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 30px;
+    }
+    
+    .contacts-info-block {
+        padding: 0;
+    }
+    
+    .map-block {
+        height: 350px;
+        min-height: 350px;
+        order: -1;
+        border-radius: 8px;
+    }
+    
+    .footer-title {
+        font-size: 24px;
+    }
+    
+    .contact-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-block {
+        min-height: 250px;
+        margin-left: -15px;
+        margin-right: -15px;
+        border-radius: 0;
+        width: calc(100% + 30px);
+    }
+    
+    .contact-text {
+        font-size: 15px;
+    }
+    
+    
+}

@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     position: relative;
     color: white; /* Если нужен светлый текст на темном фоне */
+    margin-bottom: 20px;
 }
 
 .company-stats-section::before {

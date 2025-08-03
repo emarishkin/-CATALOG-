@@ -3,6 +3,7 @@ import { Poster } from "../components/Poster";
 import { MostPopularProducts } from "../components/MostPopularProducts";
 import { CompanyInfoTop } from "../components/CompanyInfo-Top";
 import { CompanyInfoMiddle } from "../components/CompanyInfo-Middle";
+import { ContactsAndMap } from "../components/ContactsAndMap";
 
 
 export const HomePage:FC = () => {
@@ -19,6 +20,9 @@ export const HomePage:FC = () => {
             </div>
             <div className="card">
                 <CompanyInfoMiddle />
+            </div>
+            <div className="card">
+                <ContactsAndMap />
             </div>
         </>
         
