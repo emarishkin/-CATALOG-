@@ -13,7 +13,7 @@ export const MostPopularProducts: FC<MostPopularProductsProps> = () => {
                     Самые продаваемые товары
                 </h2>
                 <div className="popular-products-grid">
-                    {products.map((product) => (
+                    {products.slice(0,4).map((product) => (
                         <ProductCard 
                             key={product.id} 
                             product={product} 
