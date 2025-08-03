@@ -10,6 +10,11 @@ export const categories: ICardCategory[] = [
   { id: 6, name: 'Прокладка впускного коллектора',icon:homik},
   { id: 7, name: 'Хомут для глушителя',icon:homik},
   { id: 8, name: 'Герметик',icon:homik},
+  { id: 8, name: 'Герметик',icon:homik},
+  { id: 8, name: 'Герметик',icon:homik},
+  { id: 8, name: 'Герметик',icon:homik},
+  { id: 8, name: 'Герметик',icon:homik},
+  { id: 8, name: 'Герметик',icon:homik},
 ];
 
 

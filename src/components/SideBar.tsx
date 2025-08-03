@@ -12,59 +12,61 @@ import { useCategory } from "../Context/CategoryContext";
 interface SideBarProps {}
 
 export const SideBar: FC<SideBarProps> = () => {
-
     const { setSelectedCategory } = useCategory()
-
     const {isSidebarOpen, closeSidebar} = useSidebar()
 
     return (
-    <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
-        <section className="sidebar-section"> 
-            <div className="user-sidebar">
-                <img className="user-avatar" src={avatar} alt="Аватар пользователя" />
-                <h2>Марик</h2>
-            </div>
-            
-            <div className="sidebar-category">
-                <div className="home-sedebar">
-                    <Link to={ROUTES.HOME} onClick={closeSidebar}>
-                        <img src={homeLink} alt="Иконка дом" />
-                        <h2>Главная</h2>
-                    </Link>
+        <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
+            <section className="sidebar-section"> 
+                <div className="user-sidebar">
+                    <img className="user-avatar" src={avatar} alt="Аватар пользователя" />
+                    <h2>Марик</h2>
                 </div>
+                
+                <div className="sidebar-category">
+                    <div className="sidebar-top-links">
+                        <div className="home-sedebar">
+                            <Link to={ROUTES.HOME} onClick={closeSidebar}>
+                                <img src={homeLink} alt="Иконка дом" />
+                                <h2>Главная</h2>
+                            </Link>
+                        </div>
 
-                <div className="info-sedebar">
-                    <Link to={ROUTES.INFO} onClick={closeSidebar}>
-                        <img src={info} alt="Иконка информации" />
-                        <h2>Компания</h2>
-                    </Link>
-                </div>
+                        <div className="info-sedebar">
+                            <Link to={ROUTES.INFO} onClick={closeSidebar}>
+                                <img src={info} alt="Иконка информации" />
+                                <h2>Компания</h2>
+                            </Link>
+                        </div>
 
-                <div className="info-sedebar">
-                    <Link to={ROUTES.CONTACTS} onClick={closeSidebar}>
-                        <img src={info} alt="Иконка информации" />
-                        <h2>Контакты</h2>
-                    </Link>
-                </div>
+                        <div className="info-sedebar">
+                            <Link to={ROUTES.CONTACTS} onClick={closeSidebar}>
+                                <img src={info} alt="Иконка информации" />
+                                <h2>Контакты</h2>
+                            </Link>
+                        </div>
+                    </div>
 
-                <div className="category-title">Категории</div>
-                <div className="category-items">
-                    {categories.map(category => (
-                        <Link
-                            key={category.id}
-                            to={`/categories/${category.id}`}
-                            onClick={()=>{
-                                closeSidebar()
-                                setSelectedCategory(category.id);
-                            }}
-                        >
-                            <img src={category.icon} alt='иконка категории' />
-                            <span>{category.name}</span>
-                        </Link>
-                    ))}
+                    <div className="categories-container">
+                        <div className="category-title">Категории</div>
+                        <div className="category-items">
+                            {categories.map(category => (
+                                <Link
+                                    key={category.id}
+                                    to={`/categories/${category.id}`}
+                                    onClick={()=>{
+                                        closeSidebar()
+                                        setSelectedCategory(category.id);
+                                    }}
+                                >
+                                    <img src={category.icon} alt='иконка категории' />
+                                    <span>{category.name}</span>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     )
 }
