@@ -1,0 +1,62 @@
+
+
+.company-stats-section {
+    padding: 60px 0;
+    background-color: #252525;
+    border-radius: 15px;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/3f941953178029.592b5e65c09e3.jpg');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white; /* Если нужен светлый текст на темном фоне */
+}
+
+.company-stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.1); /* Полупрозрачный черный overlay */
+    z-index: 0;
+}
+
+.stats-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #121212;
+    line-height: 1.2;
+    margin: 0 ;
+}
+
+.stats-counters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .stats-title {
+        font-size: 2rem;
+    }
+    
+    .stats-counters-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-counters-grid {
+        grid-template-columns: 1fr;
+    }
+}
