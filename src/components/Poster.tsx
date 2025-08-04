@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import type { FC } from "react";
 import urus from '../../public/URUS.png';
+import vesta from '../../public/VESTAposter.png';
 import '../styles/Poster.css'
 import { Link } from "react-router-dom";
 
@@ -45,7 +46,7 @@ export const Poster: FC = () => {
         <div className="poster-image">
           <img 
             ref={carRef}
-            src={urus} 
+            src={vesta} 
             alt="Lamborghini Urus" 
             className={`car-image ${isAnimating ? 'animate' : ''}`}
             onMouseEnter={handleMouseEnter}
