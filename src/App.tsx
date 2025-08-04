@@ -5,6 +5,7 @@ import { CategoryProvider } from "./Context/CategoryContext"
 import { FavoritesProvider } from "./Context/FavoritesContext"
 import { BasketProvider } from "./Context/BasketContext"
 import { ProductProvider } from "./Context/ProductContext"
+import { ScrollToTop } from "./utils/ScrollToTop"
 
 function App() {
 
@@ -16,7 +17,9 @@ function App() {
         <FavoritesProvider>
         <CategoryProvider>
         <SidebarProvider>
-         <AppRoutes />
+          <ScrollToTop>
+            <AppRoutes />
+          </ScrollToTop>
         </SidebarProvider>
         </CategoryProvider>
         </FavoritesProvider>
