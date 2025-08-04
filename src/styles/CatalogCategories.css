@@ -1,0 +1,58 @@
+/* CatalogCategories.css */
+.catalog-categories-page {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.catalog-categories-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.catalog-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.categories-elements {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Делаем некоторые карточки шире */
+.categories-elements:nth-child(3n+1) {
+  grid-column: span 2;
+}
+
+.categories-elements:nth-child(5n+2) {
+  grid-row: span 2;
+}
+
+.categories-elements:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.categories-elements span {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+}

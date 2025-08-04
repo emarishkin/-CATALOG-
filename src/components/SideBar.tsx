@@ -45,6 +45,12 @@ export const SideBar: FC<SideBarProps> = () => {
                                 <h2>Контакты</h2>
                             </Link>
                         </div>
+                        <div className="info-sedebar">
+                            <Link to={ROUTES.CATALOG} onClick={closeSidebar}>
+                                <img src={info} alt="Иконка информации" />
+                                <h2>Каталог</h2>
+                            </Link>
+                        </div>
                     </div>
 
                     <div className="categories-container">

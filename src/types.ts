@@ -2,6 +2,7 @@ export interface ICardCategory {
     id: number;
     name: string; 
     icon:string
+    backImage?:string
 }
 
 export interface IProduct {

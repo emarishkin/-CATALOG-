@@ -2,19 +2,14 @@ import type { ICardCategory, IProduct } from "./types";
 import homik from '../public/HomeSideBar.png'
 
 export const categories: ICardCategory[] = [
-  { id: 1, name: 'Патрубок воздушный',icon:homik},
-  { id: 2, name: 'Шланг воздушный для автомобиля',icon:homik},
-  { id: 3, name: 'Воздушный фильтр',icon:homik},
-  { id: 4, name: 'Крышка бачка расширительного',icon:homik},
-  { id: 5, name: 'Скрутка рулевых тяг',icon:homik},
-  { id: 6, name: 'Прокладка впускного коллектора',icon:homik},
-  { id: 7, name: 'Хомут для глушителя',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
-  { id: 8, name: 'Герметик',icon:homik},
+  { id: 1, name: 'Патрубок воздушный',icon:homik,backImage:'https://avatars.mds.yandex.net/get-marketpic/1920987/pic9efd1d5f424b17417f38f467d2379c59/x332_trim'},
+  { id: 2, name: 'Шланг воздушный для автомобиля',icon:homik,backImage:'https://faetonkirov.ru/upload/iblock/eb2/eb2159da8faab06f009543cc739afb89.jpg'},
+  { id: 3, name: 'Воздушный фильтр',icon:homik,backImage:'https://avatars.mds.yandex.net/i?id=b583e4f5cfdf55ce3d8ecdb9fcb0f45b_l-12569748-images-thumbs&n=13'},
+  { id: 4, name: 'Крышка бачка расширительного',icon:homik,backImage:'https://avatars.mds.yandex.net/get-mpic/13714821/2a00000195609f8fa45596169a4c8cd9492b/orig'},
+  { id: 5, name: 'Скрутка рулевых тяг',icon:homik,backImage:'https://avtozip.su/upload/iblock/e1e/x2dnmwe3at6mcbd8xex3wmbfo3lba6i2/21010300307900.jpg'},
+  { id: 6, name: 'Прокладка впускного коллектора',icon:homik,backImage:'https://avatars.mds.yandex.net/get-mpic/4055688/img_id3320824968538514077.jpeg/orig'},
+  { id: 7, name: 'Хомут для глушителя',icon:homik,backImage:'https://avatars.mds.yandex.net/get-mpic/6338835/img_id4954095369486208506.jpeg/orig'},
+  { id: 8, name: 'Герметик',icon:homik,backImage:'https://avatars.mds.yandex.net/get-mpic/10483373/2a0000018a50d74e0670c48e0f02d3daf933/orig'},
 ];
 
 

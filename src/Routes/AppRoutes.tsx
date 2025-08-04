@@ -13,6 +13,7 @@ import { ContactWithYou } from "../components/ContactWithYou";
 import { CompanyPage } from "../Pages/CompanyPage";
 import { ProductPage } from "../Pages/ProductPage";
 import { ContactsPage } from "../Pages/ContactsPage";
+import { CatalogCategories } from "../Pages/CatalogCategories";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -35,6 +36,7 @@ export const AppRoutes: FC = () => {
                         <Route path={ROUTES.BASKET} element={<BasketPage />} />
                         <Route path={ROUTES.PRODUCTS} element={<ProductPage />} />
                         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
+                        <Route path={ROUTES.CATALOG} element={<CatalogCategories />} />
                     </Routes>
                 </div>
             </div>
