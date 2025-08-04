@@ -7,5 +7,6 @@ export const ROUTES = {
     INFO:'/info',
     CHECKOUT:'/checkout',
     CONTACTS:'/contacts',
-    CATALOG:'/catalog'
+    CATALOG:'/catalog',
+    ORDER_SUCCESS: '/order-success'
 }

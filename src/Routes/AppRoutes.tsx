@@ -14,6 +14,7 @@ import { CompanyPage } from "../Pages/CompanyPage";
 import { ProductPage } from "../Pages/ProductPage";
 import { ContactsPage } from "../Pages/ContactsPage";
 import { CatalogCategories } from "../Pages/CatalogCategories";
+import { CheckoutPage } from "../Pages/CheckoutPage";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -37,6 +38,7 @@ export const AppRoutes: FC = () => {
                         <Route path={ROUTES.PRODUCTS} element={<ProductPage />} />
                         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
                         <Route path={ROUTES.CATALOG} element={<CatalogCategories />} />
+                        <Route path={ROUTES.CHECKOUT} element={<CheckoutPage />} />
                     </Routes>
                 </div>
             </div>
