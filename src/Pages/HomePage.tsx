@@ -4,6 +4,7 @@ import { MostPopularProducts } from "../components/MostPopularProducts";
 import { CompanyInfoTop } from "../components/CompanyInfo-Top";
 import { CompanyInfoMiddle } from "../components/CompanyInfo-Middle";
 import { ContactsAndMap } from "../components/ContactsAndMap";
+import { CompanyInfoFooter } from "../components/CompanyInfo-Footer";
 
 
 export const HomePage:FC = () => {
@@ -20,6 +21,9 @@ export const HomePage:FC = () => {
             </div>
             <div className="card">
                 <CompanyInfoMiddle />
+            </div>
+            <div className="card">
+                <CompanyInfoFooter />
             </div>
             <div className="card">
                 <ContactsAndMap />

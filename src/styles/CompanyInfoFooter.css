@@ -1,0 +1,62 @@
+/* CompanyInfoFooter.css */
+.company-info-special {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #252525;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.footer-title {
+    text-align:start ;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.features-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+}
+
+.feature-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.9;
+}
