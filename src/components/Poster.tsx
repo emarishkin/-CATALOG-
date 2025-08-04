@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import type { FC } from "react";
 import urus from '../../public/URUS.png';
 import '../styles/Poster.css'
+import { Link } from "react-router-dom";
 
 export const Poster: FC = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -38,8 +39,8 @@ export const Poster: FC = () => {
         <div className="poster-text">
           <div className="poster-discount">20% Скидка</div>
           <div className="poster-subtitle">Это бестселлер 2024</div>
-          <h1 className="poster-title">Тормозные колодки для<br />Lamborgini Urus</h1>
-          <button className="poster-button">Купить сейчас</button>
+          <h1 className="poster-title">ГЕРМЕТИК-ПРОКЛАДКА «АВТОСИЛ 11225» ЧЕРНЫЙ, 60 Г<br />Подойдем для любого автомобиля</h1>
+          <Link className="poster-button" to={'/products/22'}>Купить сейчас</Link>
         </div>
         <div className="poster-image">
           <img 
