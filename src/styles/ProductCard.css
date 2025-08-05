@@ -17,6 +17,7 @@
     position: relative;
     padding-top: 75%; /* Соотношение сторон 4:3 */
     overflow: hidden;
+    
 }
 
 .product-link {
@@ -29,6 +30,7 @@
 }
 
 .product-image {
+    padding: 0px;
     position: absolute;
     top: 0;
     left: 0;

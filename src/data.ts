@@ -65,8 +65,8 @@ export const products:IProduct[] = [
     },
     images: [
       "https://avatars.mds.yandex.net/get-mpic/4923482/2a0000019258f2330bf01971a1c93f75a266/orig",
-      "",
-      ""
+      "https://bi-bi.ru/medias/sys_master/images/images/h88/h38/9033188999198.jpg",
+      "https://cdn1.ozone.ru/s3/multimedia-u/c600/6759075522.jpg"
     ]
   },
   {
@@ -84,8 +84,8 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://avatars.mds.yandex.net/get-mpic/12476287/2a0000018db691e0bd3409523a4cba720a68/orig",
-      "https://placehold.co/600x400",
+      "https://avatars.mds.yandex.net/get-mpic/7888310/2a0000018e1283411f4ee1f5f607cae6d378/orig",
+      "https://ir.ozone.ru/s3/multimedia-9/c1000/6759075537.jpg",
       "https://placehold.co/600x400"
     ]
   },
@@ -104,7 +104,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-d/c600/6507667117.jpg",
+      "https://avatars.mds.yandex.net/get-mpic/4114383/img_id2006863117893210909.jpeg/9",
       "https://placehold.co/600x400",
       "https://placehold.co/600x400"
     ]
@@ -124,7 +124,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
+      "https://injector-don.ru/upload/iblock/69a/l0i1iygqxxou4g1ound7quvtx3rtaz0i.jpg",
       "https://placehold.co/600x400",
       "https://placehold.co/600x400"
     ]
