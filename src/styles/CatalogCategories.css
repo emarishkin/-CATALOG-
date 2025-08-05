@@ -18,6 +18,7 @@
   grid-auto-rows: 150px;
   gap: 20px;
   padding: 0 20px;
+  grid-auto-flow: dense;
 }
 
 .categories-elements {
