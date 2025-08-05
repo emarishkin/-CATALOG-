@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import type { FC } from "react";
-import urus from '../../public/URUS.png';
+// import urus from '../../public/URUS.png';
 import vesta from '../../public/VESTAposter.png';
 import '../styles/Poster.css'
 import { Link } from "react-router-dom";

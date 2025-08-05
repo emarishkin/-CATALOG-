@@ -8,5 +8,6 @@ export const ROUTES = {
     CHECKOUT:'/checkout',
     CONTACTS:'/contacts',
     CATALOG:'/catalog',
-    ORDER_SUCCESS: '/order-success'
+    ORDER_SUCCESS: '/order-success',
+    ROUTES_ERROR:'/order-error'
 }

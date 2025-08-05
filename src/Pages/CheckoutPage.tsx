@@ -4,16 +4,15 @@ import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../utils/routes';
 import '../styles/CheckoutPage.css';
 
-// Конфигурация (ЗАМЕНИТЕ НА СВОИ ДАННЫЕ)
-const BOT_TOKEN = '8264322522:AAG2exP7_LOUTW01zpdv-KYKz2KXP5GyIEc'
-const CHAT_ID = -1002774809072; // Пример: '866417954' (должен быть строкой или числом)
-const ADMIN_EMAIL = 'egormark142@gmail.com'; // Email для уведомлений
-const BACKUP_EMAIL = 'ваш_резервный@email.com'; // Резервный email
 
-// Альтернативные API Telegram (на случай блокировки основного)
+const BOT_TOKEN = '8264322522:AAG2exP7_LOUTW01zpdv-KYKz2KXP5GyIEc'
+const CHAT_ID = -1002774809072;
+const ADMIN_EMAIL = 'egormark142@gmail.com'; 
+const BACKUP_EMAIL = 'ваш_резервный@email.com'; 
+
 const TELEGRAM_API_URLS = [
   `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
-  `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, // Дублируем основной URL для надежности
+  `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, 
 ];
 
 export const CheckoutPage = () => {
@@ -24,7 +23,7 @@ export const CheckoutPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
-  // Проверка доступности бота Telegram
+
   const testTelegramConnection = async () => {
     try {
       const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/getMe`);
@@ -67,7 +66,6 @@ export const CheckoutPage = () => {
     setIsLoading(true);
 
     try {
-      // Формируем текст заказа
       const itemsText = basketArray
         .map((item) => `- ${item.title} (${item.quantity} шт.) — ${item.price * item.quantity} руб.`)
         .join('\n');
@@ -100,8 +98,7 @@ export const CheckoutPage = () => {
       clearBasket();
       navigate(ROUTES.ORDER_SUCCESS);
     } catch (error) {
-      alert('Ошибка при оформлении заказа. Пожалуйста, попробуйте ещё раз или свяжитесь с нами.');
-      console.error('Ошибка:', error);
+      navigate(ROUTES.ROUTES_ERROR)
     } finally {
       setIsLoading(false);
     }
