@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import auraFON from '../../public/AURA.webp';
+// import largus from '../../public/LARGUS-TEST.jpg';
 import '../styles/CompanyInfoTop.css';
 
 export const CompanyInfoTop: FC = () => {

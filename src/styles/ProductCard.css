@@ -30,11 +30,9 @@
 }
 
 .product-image {
-    padding: 0px;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 15px;
     height: 100%;
     object-fit: cover;
 }

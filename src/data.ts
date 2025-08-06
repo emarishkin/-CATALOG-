@@ -84,9 +84,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://avatars.mds.yandex.net/get-mpic/7888310/2a0000018e1283411f4ee1f5f607cae6d378/orig",
+      "https://i.ibb.co/7JpcY3rD/Mask-group-6.png",
       "https://ir.ozone.ru/s3/multimedia-9/c1000/6759075537.jpg",
-      "https://placehold.co/600x400"
+      ""
     ]
   },
   {
@@ -105,8 +105,8 @@ export const products:IProduct[] = [
     },
     images: [
       "https://avatars.mds.yandex.net/get-mpic/4114383/img_id2006863117893210909.jpeg/9",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "",
+      ""
     ]
   },
   {
@@ -125,8 +125,8 @@ export const products:IProduct[] = [
     },
     images: [
       "https://injector-don.ru/upload/iblock/69a/l0i1iygqxxou4g1ound7quvtx3rtaz0i.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "",
+      ""
     ]
   },
   {
@@ -144,9 +144,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/Psnctpr9/Mask-group-32.png",
+      "",
+      ""
     ]
   },
   {
@@ -164,9 +164,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/dspZCZtC/Mask-group-12.png",
+      "",
+      ""
     ]
   },
   {
@@ -184,9 +184,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ccrhL8qP/Mask-group-5.png",
+      "",
+      ""
     ]
   },
   {
@@ -204,9 +204,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/RGYKWXWg/Mask-group-4.png",
+      "",
+      ""
     ]
   },
   {
@@ -224,9 +224,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/fVhc2hGd/Mask-group-3.png",
+      "",
+      ""
     ]
   },
   {
@@ -244,9 +244,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/VpxtthrN/Mask-group-9.png",
+      "",
+      ""
     ]
   },
   {
@@ -264,9 +264,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/KjCg9Mxv/Mask-group-18.png",
+      "",
+      ""
     ]
   },
   {
@@ -284,9 +284,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/Fb2NrmDk/Mask-group-7.png",
+      "",
+      ""
     ]
   },
   {
@@ -305,8 +305,8 @@ export const products:IProduct[] = [
     },
     images: [
       "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "",
+      ""
     ]
   },
   {
@@ -324,9 +324,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/3y8DP6h2/Mask-group-13.png",
+      "",
+      ""
     ]
   },
   {
@@ -344,9 +344,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/zdcpNvF/Mask-group-25.png",
+      "",
+      ""
     ]
   },
   {
@@ -364,9 +364,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/39dR6MgC/Mask-group-10.png",
+      "",
+      ""
     ]
   },
   {
@@ -384,9 +384,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/35v0tGXD/Mask-group-16.png",
+      "",
+      ""
     ]
   },
   {
@@ -404,14 +404,14 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/tpMDWN8Z/Mask-group-8.png",
+      "",
+      ""
     ]
   },
   {
     id: 31,
-    title: "Домкрат ромбический ВД 1000 кг (15см-36см)!!!!!!!!!!!!!!____",
+    title: "НЕТ НА ОЗОНЕ",
     rating: 5,
     inStock: true,
     quantityInLot:1,
@@ -424,9 +424,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/RpqfmYRy/Mask-group-17.png",
+      "",
+      ""
     ]
   },
   {
@@ -444,9 +444,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/zh0T7MpF/Mask-group-22.png",
+      "https://i.ibb.co/RpqfmYRy/Mask-group-17.png",
+      ""
     ]
   },
   {
@@ -464,9 +464,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/HDTJdKqZ/Mask-group-33.png",
+      "",
+      ""
     ]
   },
   {
@@ -484,9 +484,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/9Hfy5ZKm/Mask-group-23.png",
+      "https://i.ibb.co/BVYpz3yZ/Mask-group-23-1.png",
+      ""
     ]
   },
   {
@@ -504,9 +504,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/TxFwq9xm/Mask-group-21.png",
+      "",
+      ""
     ]
   },
   {
@@ -524,9 +524,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/N2WMS28j/Mask-group-19.png",
+      "",
+      ""
     ]
   },
   {
@@ -544,9 +544,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/tTGjvHpR/Mask-group-20.png",
+      "",
+      ""
     ]
   },
   {
@@ -564,9 +564,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/0yN6Fgy4/Mask-group-11.png",
+      "",
+      ""
     ]
   },
   {
@@ -584,9 +584,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/WWY2VLcj/Mask-group-24.png",
+      "",
+      ""
     ]
   },
   {
@@ -604,9 +604,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/sdWGrqxj/Mask-group-26.png",
+      "",
+      ""
     ]
   },
   {
@@ -624,9 +624,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/HDBqQtr8/Mask-group-14.png",
+      "",
+      ""
     ]
   },
   {
@@ -644,9 +644,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/V1yRDLt/Mask-group-55.png",
+      "",
+      ""
     ]
   },
   {
@@ -664,9 +664,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/2YZd6H7M/Mask-group-35.png",
+      "",
+      ""
     ]
   },
   {
@@ -684,9 +684,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/gMdxHKcq/Mask-group-37.png",
+      "",
+      ""
     ]
   },
   {
@@ -704,9 +704,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/N691G7PP/Mask-group-39.png",
+      "",
+      ""
     ]
   },
   {
@@ -724,9 +724,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/hbhvbm3/Mask-group-38.png",
+      "",
+      ""
     ]
   },
   {
@@ -744,9 +744,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/vC6rVGGc/Mask-group-41.png",
+      "",
+      ""
     ]
   },
   {
@@ -764,9 +764,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ZR2FQCt8/Mask-group-40.png",
+      "",
+      ""
     ]
   },
   {
@@ -784,9 +784,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/849fxm9t/Mask-group-42.png",
+      "",
+      ""
     ]
   },
   {
@@ -804,9 +804,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/0yYwLYMH/Mask-group-44.png",
+      "",
+      ""
     ]
   },
   {
@@ -824,9 +824,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/vxRYG3XM/Mask-group-43.png",
+      "",
+      ""
     ]
   },
   {
@@ -844,9 +844,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ym8KV8x7/Mask-group-51.png",
+      "",
+      ""
     ]
   },
   {
@@ -864,9 +864,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/BH1VHpbZ/Mask-group-52.png",
+      "",
+      ""
     ]
   },
   {
@@ -884,9 +884,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/dSVkZVS/Mask-group-53.png",
+      "",
+      ""
     ]
   },
   {
@@ -904,9 +904,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/nMFPWLJJ/Mask-group-48.png",
+      "",
+      ""
     ]
   },
   {
@@ -924,9 +924,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/nMFPWLJJ/Mask-group-48.png",
+      "",
+      ""
     ]
   },
   {
@@ -944,9 +944,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/twF5FYx3/Mask-group-54.png",
+      "",
+      ""
     ]
   },
   {
@@ -964,9 +964,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/XksqBcqx/Mask-group-47.png",
+      "",
+      ""
     ]
   },
   {
@@ -984,9 +984,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/DH10WR42/Mask-group-45.png",
+      "",
+      ""
     ]
   },
   {
@@ -1004,9 +1004,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/cVLfM6C/Mask-group-46.png",
+      "",
+      ""
     ]
   },
   {
@@ -1024,9 +1024,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/d0Tdx1m8/Mask-group-50.png",
+      "",
+      ""
     ]
   },
   {
@@ -1044,9 +1044,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/V1yRDLt/Mask-group-55.png",
+      "",
+      ""
     ]
   },
   {
@@ -1064,9 +1064,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/394VsZ1P/Mask-group-56.png",
+      "",
+      ""
     ]
   },
   {
@@ -1084,9 +1084,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ccn5n1fW/Mask-group-57.png",
+      "",
+      ""
     ]
   },
   {
@@ -1104,29 +1104,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
-    ]
-  },
-  {
-    id: 65,
-    title: "Реле поворотов и аварийной сигнализации 781.3777 ВАЗ 2103-2107, Нива 2121,ГАЗ 3110,31029,Газель (4-контактное), 12В СОГДИАНА",
-    rating: 5,
-    inStock: true,
-    quantityInLot:1,
-    price: 219,
-    quantity:1,
-    description: "Нагрузка (макс): 2х21+3 Вт Нагрузка при аварийной сигнализации (макс): (2х21+3)х2 Вт Частота прерываний: 90+/-30 цикл/мин Регулируемое напряжение: 12В",
-    category: {
-      id: 34,
-      name: "Реле указателей поворота",
-      icon: 'icon'
-    },
-    images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ycqLTQyF/Mask-group-58.png",
+      "",
+      ""
     ]
   },
   {
@@ -1144,9 +1124,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/9mstTVS1/Mask-group-59.png",
+      "",
+      ""
     ]
   },
   {
@@ -1164,9 +1144,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/ps4nG4s/Mask-group-60.png",
+      "",
+      ""
     ]
   },
   {
@@ -1184,9 +1164,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/rKdLPnDZ/Mask-group-61.png",
+      "",
+      ""
     ]
   },
   {
@@ -1204,9 +1184,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/7tCdcBF3/Mask-group-68-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1224,9 +1204,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/VW6d0rMc/Mask-group-64-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1244,9 +1224,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/39grYwkq/Mask-group-65-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1264,9 +1244,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/VYq2FVBX/Mask-group-63.png",
+      "",
+      ""
     ]
   },
   {
@@ -1284,9 +1264,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/pppW47F/Mask-group-67-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1304,9 +1284,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/mFgxZx7D/Mask-group-66-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1324,9 +1304,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/VWwbcg7p/Mask-group-69-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1344,9 +1324,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/Z6Dnkpb6/Mask-group-71-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1364,9 +1344,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/hFTZXHLp/Mask-group-70-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1384,9 +1364,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/jZRb5fyk/Mask-group-72-2.png",
+      "",
+      ""
     ]
   },
   {
@@ -1404,9 +1384,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/cXrPTYWJ/Mask-group-73.png",
+      "",
+      ""
     ]
   },
   {
@@ -1424,9 +1404,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/qLQ5C0X1/Mask-group-74.png",
+      "",
+      ""
     ]
   },
   {
@@ -1444,9 +1424,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/KcpWTkrS/Mask-group-75.png",
+      "",
+      ""
     ]
   },
   {
@@ -1464,9 +1444,9 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400"
+      "https://i.ibb.co/jn3mmG0/Mask-group-76-2.png",
+      "",
+      ""
     ]
   },
 
