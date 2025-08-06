@@ -16,6 +16,7 @@ import { ContactsPage } from "../Pages/ContactsPage";
 import { CatalogCategories } from "../Pages/CatalogCategories";
 import { CheckoutPage } from "../Pages/CheckoutPage";
 import { OrderSuccessPage } from "../Pages/OrderSuccessPage";
+import { SearchPage } from "../Pages/SearchPage";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
@@ -41,6 +42,7 @@ export const AppRoutes: FC = () => {
                         <Route path={ROUTES.CATALOG} element={<CatalogCategories />} />
                         <Route path={ROUTES.CHECKOUT} element={<CheckoutPage />} />
                         <Route path={ROUTES.ORDER_SUCCESS} element={<OrderSuccessPage />} />
+                        <Route path={ROUTES.SEARCH} element={<SearchPage />} />
                     </Routes>
                 </div>
             </div>

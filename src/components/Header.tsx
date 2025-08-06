@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTES } from "../utils/routes";
 import logo from '../../public/logo.svg';
 import searchIcon from '../../public/SEARCH.svg';
@@ -11,10 +11,13 @@ import '../styles/Header.css';
 import { useSidebar } from "../Context/SidebarContext";
 import { useFavorites } from "../Context/FavoritesContext";
 import { useBasket } from "../Context/BasketContext";
+import { useSearch } from "../Context/SearchContext";
 
 export const Header: FC = () => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [searchValue, setSearchValue] = useState("");
+     let navigate = useNavigate()
+     const {performSearch,searchResults} = useSearch()
     
     const {toggleSidebar,isSidebarOpen} = useSidebar()
 
@@ -27,7 +30,23 @@ export const Header: FC = () => {
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchValue(e.target.value);
+        if(e.target.value.trim()){
+            performSearch(e.target.value)
+            navigate(ROUTES.SEARCH)
+        }
     };
+
+    const handleSubmit = (e: React.FormEvent) => {
+     e.preventDefault()
+     if (searchValue.trim()) {
+            performSearch(searchValue);
+            navigate(ROUTES.SEARCH);
+    } else if (searchResults.length > 0) {
+            navigate(ROUTES.SEARCH);
+        }
+    }
+
+
 
     return (
         <header className="header">
@@ -39,7 +58,7 @@ export const Header: FC = () => {
 
 
             <div className={`search-container `}>
-                <form className="search-form" onClick={(e) => e.stopPropagation()}>
+                <form className="search-form" onSubmit={handleSubmit} onClick={(e) => e.stopPropagation()}>
                     <img src={searchIcon} alt="Иконка поиска" className="search-icon" />
                     <input
                         name="search"

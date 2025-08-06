@@ -9,5 +9,6 @@ export const ROUTES = {
     CONTACTS:'/contacts',
     CATALOG:'/catalog',
     ORDER_SUCCESS: '/order-success',
-    ROUTES_ERROR:'/order-error'
+    ROUTES_ERROR:'/order-error',
+    SEARCH:'/search'
 }
