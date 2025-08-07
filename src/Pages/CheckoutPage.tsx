@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../utils/routes';
 import '../styles/CheckoutPage.css';
 
-
 const BOT_TOKEN = '8264322522:AAG2exP7_LOUTW01zpdv-KYKz2KXP5GyIEc'
 const CHAT_ID = -1002774809072;
 const ADMIN_EMAIL = 'egormark142@gmail.com'; 
@@ -18,11 +17,10 @@ const TELEGRAM_API_URLS = [
 export const CheckoutPage = () => {
   const { basketArray, basketTotal, clearBasket } = useBasket();
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState('+7 ');
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
-
 
   const testTelegramConnection = async () => {
     try {
@@ -35,7 +33,6 @@ export const CheckoutPage = () => {
     }
   };
 
-  // Отправка сообщения в Telegram
   const sendToTelegram = async (message: string) => {
     const botAvailable = await testTelegramConnection();
     if (!botAvailable) return false;
@@ -60,7 +57,28 @@ export const CheckoutPage = () => {
     return false;
   };
 
-  // Отправка заказа
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    
+    if (value.length < 3) {
+      setPhone('+7 ');
+      return;
+    }
+    
+    if (!value.startsWith('+7 ')) {
+      const digits = value.replace(/\D/g, '');
+      if (digits.startsWith('7')) {
+        setPhone('+7 ' + digits.slice(1));
+      } else {
+        setPhone('+7 ' + digits);
+      }
+      return;
+    }
+    
+    const newValue = '+7 ' + value.slice(3).replace(/\D/g, '');
+    setPhone(newValue);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
@@ -72,10 +90,8 @@ export const CheckoutPage = () => {
 
       const orderText = `Новый заказ!\n\nКлиент: ${name}\nТелефон: ${phone}\nEmail: ${email}\n\nТовары:\n${itemsText}\n\nИтого: ${basketTotal} руб.`;
 
-      // 1. Пытаемся отправить в Telegram
       const telegramSent = await sendToTelegram(orderText);
 
-      // 2. Если Telegram не сработал — отправляем на резервный email
       if (!telegramSent) {
         console.warn('Telegram недоступен, отправляем на резервный email');
         const backupSubject = `[Резерв] Заказ от ${name}`;
@@ -85,7 +101,6 @@ export const CheckoutPage = () => {
         );
       }
 
-      // 3. Отправляем подтверждение клиенту и администратору
       const emailSubject = `Ваш заказ на ${basketTotal} руб.`;
       const emailBody = `Уважаемый ${name}, спасибо за заказ!\n\nДетали:\n${itemsText}\n\nИтого: ${basketTotal} руб.\n\nМы свяжемся с вами для подтверждения.`;
 
@@ -94,7 +109,6 @@ export const CheckoutPage = () => {
         '_blank'
       );
 
-      // Очищаем корзину и переходим на страницу успеха
       clearBasket();
       navigate(ROUTES.ORDER_SUCCESS);
     } catch (error) {
@@ -107,58 +121,65 @@ export const CheckoutPage = () => {
   return (
     <div className="checkout-container">
       <h1>Оформление заказа</h1>
-      <form onSubmit={handleSubmit} className="checkout-form">
-        <div className="form-group">
-          <label>Ваше имя*</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
+      <div className="checkout-layout">
+        <form onSubmit={handleSubmit} className="checkout-form">
+          <h2>Контактная информация</h2>
+          <div className="form-group">
+            <label>Ваше имя*</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label>Телефон*</label>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            pattern="\+?[0-9\s\-\(\)]+"
-            placeholder="+7 (XXX) XXX-XX-XX"
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label>Телефон*</label>
+            <input
+              type="tel"
+              value={phone}
+              onChange={handlePhoneChange}
+              pattern="\+7\s[0-9\s\-\(\)]{10,}"
+              placeholder="+7 (XXX) XXX-XX-XX"
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label>Email*</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label>Email*</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
 
-        <button type="submit" disabled={isLoading} className="submit-order">
-          {isLoading ? 'Отправка...' : 'Подтвердить заказ'}
-        </button>
-      </form>
+          <button type="submit" disabled={isLoading} className="submit-order">
+            {isLoading ? 'Отправка...' : 'Подтвердить заказ'}
+          </button>
+        </form>
 
-      <div className="order-summary">
-        <h2>Ваш заказ</h2>
-        {basketArray.map((item) => (
-          <div key={item.id} className="order-item">
-            <img src={item.images[0]} alt={item.title} />
-            <div>
-              <h4>{item.title}</h4>
-              <p>{item.quantity} × {item.price} руб.</p>
+        <div className="order-summary">
+          <h2>Ваш заказ</h2>
+          <div className="order-items">
+            {basketArray.map((item) => (
+              <div key={item.id} className="order-item">
+                <img src={item.images[0]} alt={item.title} />
+                <div className="item-info">
+                  <h4>{item.title}</h4>
+                  <p>{item.quantity} × {item.price} руб.</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="order-total">
+            <div className="total-row">
+              <span>Итого:</span>
+              <span>{basketTotal} руб.</span>
             </div>
           </div>
-        ))}
-        <div className="order-total">
-          <span>Итого:</span>
-          <span>{basketTotal} руб.</span>
         </div>
       </div>
     </div>

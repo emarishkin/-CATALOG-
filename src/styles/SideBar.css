@@ -21,7 +21,7 @@
 }
 
 body.page-home .sidebar-section {
-    height:1;
+    height: 3565px;;
 }
 
 body.page-company .sidebar-section {
@@ -36,7 +36,9 @@ body.page-catalog .sidebar-section {
     height: 1800px;
 }
 
-
+body.page-checkout .sidebar-section {
+    height: 750px;
+}
 
 .user-sidebar {
     display: flex;

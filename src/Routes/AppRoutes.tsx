@@ -43,6 +43,8 @@ export const AppRoutes: FC = () => {
             body.classList.add("page-catalog");
         } else if (location.pathname.startsWith("/categories/")) {
             body.classList.add("page-category");
+        } else if (location.pathname === ROUTES.CHECKOUT) {
+            body.classList.add("page-checkout");
         }
     }, [location.pathname]);
 
