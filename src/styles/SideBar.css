@@ -37,7 +37,8 @@ body.page-catalog .sidebar-section {
 }
 
 body.page-category .sidebar-section {
-    height: calc(220vh - 1700px);
+    
+    
 }
 
 .user-sidebar {
