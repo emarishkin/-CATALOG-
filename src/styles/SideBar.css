@@ -18,7 +18,26 @@
     flex-direction: column;
     gap: 20px;
     border-radius: 12px;
-    height: 100%;
+}
+
+body.page-home .sidebar-section {
+    height:1;
+}
+
+body.page-company .sidebar-section {
+    height: calc(180vh - 205px);
+}
+
+body.page-contacts .sidebar-section {
+    height: 800px;
+}
+
+body.page-catalog .sidebar-section {
+    height: 1800px;
+}
+
+body.page-category .sidebar-section {
+    height: calc(220vh - 1700px);
 }
 
 .user-sidebar {

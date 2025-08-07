@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { ContactsAndMap } from "../components/ContactsAndMap";
 
-export const ContactsPage:FC = () => {
+export const ContactsPage: FC = () => {
     return (
-        <>
-         <ContactsAndMap />
-        </>
-    )
-}
+        <div className="contacts-page">
+            <ContactsAndMap />
+        </div>
+    );
+};

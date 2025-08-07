@@ -1,6 +1,6 @@
-import type { FC } from "react";
+import { useEffect, type FC } from "react";
 import { Header } from "../components/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { SideBar } from "../components/SideBar";
 import { useSidebar } from "../Context/SidebarContext";
@@ -20,6 +20,31 @@ import { SearchPage } from "../Pages/SearchPage";
 
 export const AppRoutes: FC = () => {
     const { isSidebarOpen, closeSidebar } = useSidebar();
+    const location = useLocation();
+
+    useEffect(() => {
+        const body = document.body;
+        
+        body.classList.remove(
+            "page-home",
+            "page-company",
+            "page-contacts",
+            "page-catalog",
+            "page-category"
+        );
+
+        if (location.pathname === ROUTES.HOME) {
+            body.classList.add("page-home");
+        } else if (location.pathname === ROUTES.INFO) {
+            body.classList.add("page-company");
+        } else if (location.pathname === ROUTES.CONTACTS) {
+            body.classList.add("page-contacts");
+        } else if (location.pathname === ROUTES.CATALOG) {
+            body.classList.add("page-catalog");
+        } else if (location.pathname.startsWith("/categories/")) {
+            body.classList.add("page-category");
+        }
+    }, [location.pathname]);
 
     return (
         <>
