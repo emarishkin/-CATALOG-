@@ -140,6 +140,7 @@
 }
 
 .quantity-value {
+  color: #00aa07;
   min-width: 30px;
   text-align: center;
   font-size: 25px;

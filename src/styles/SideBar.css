@@ -102,7 +102,7 @@ body.page-search .sidebar-section {
 
 .home-sedebar a:hover,
 .info-sedebar a:hover {
-    background-color: #333;
+    background-color: #f68104;
     transform: translateX(5px);
 }
 

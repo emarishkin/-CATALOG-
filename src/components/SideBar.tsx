@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { Link } from "react-router-dom";
 import homeLink from '../../public/HomeSideBar.png'
 import '../styles/SideBar.css'
-import avatar from '../../public/GUEST.png'
+// import avatar from '../../public/GUEST.png'
 import info from '../../public/INFO-sidebar.png'
 import { categories } from "../data";
 import { ROUTES } from "../utils/routes";
@@ -18,10 +18,10 @@ export const SideBar: FC<SideBarProps> = () => {
     return (
         <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
             <section className="sidebar-section"> 
-                <div className="user-sidebar">
+                {/* <div className="user-sidebar">
                     <img className="user-avatar" src={avatar} alt="Аватар пользователя" />
                     <h2>Марик</h2>
-                </div>
+                </div> */}
                 
                 <div className="sidebar-category">
                     <div className="sidebar-top-links">

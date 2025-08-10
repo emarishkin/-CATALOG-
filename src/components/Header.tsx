@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ROUTES } from "../utils/routes";
-import logo from '../../public/logo.svg';
+import logo from '../../public/LOGOwHITE.png';
 import searchIcon from '../../public/SEARCH.svg';
 import heart from '../../public/HEART.png';
 import basket from '../../public/BAY.png';
