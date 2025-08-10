@@ -30,7 +30,10 @@ export const AppRoutes: FC = () => {
             "page-company",
             "page-contacts",
             "page-catalog",
-            "page-category"
+            "page-category",
+            "page-checkout",
+            "page-products",
+            "page-search"
         );
 
         if (location.pathname === ROUTES.HOME) {
@@ -45,7 +48,12 @@ export const AppRoutes: FC = () => {
             body.classList.add("page-category");
         } else if (location.pathname === ROUTES.CHECKOUT) {
             body.classList.add("page-checkout");
-        }
+        } else if (location.pathname.startsWith('/products/')) {
+            body.classList.add("page-products");
+        } else if (location.pathname === ROUTES.SEARCH) {
+            body.classList.add("page-search");
+    }
+
     }, [location.pathname]);
 
     return (

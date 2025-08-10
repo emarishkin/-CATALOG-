@@ -64,7 +64,7 @@ export const ProductPage:FC = () => {
                         <div className="product-header">
                             <div className="product-isStock">
                                 <img src={currentProduct.inStock ? galka : krestik} alt="Статус наличия" />
-                                <span>{currentProduct.inStock ? 'В наличии' : 'Нет в наличии'}</span>
+                                <span style={{color: currentProduct.inStock ? '#00aa07' : '#ff1100'}}>{currentProduct.inStock ? 'В наличии' : 'Нет в наличии'}</span>
                             </div>
                             <h1 className="product-title-page">{currentProduct.title}</h1>
                         </div>

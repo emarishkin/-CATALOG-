@@ -40,6 +40,15 @@ body.page-checkout .sidebar-section {
     height: 750px;
 }
 
+body.page-products .sidebar-section {
+   height: 750px !important;
+}
+
+body.page-search .sidebar-section {
+    height: 750px !important;
+}
+
+
 .user-sidebar {
     display: flex;
     align-items: center;
