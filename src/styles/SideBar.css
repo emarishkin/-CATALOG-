@@ -47,6 +47,12 @@ body.page-products .sidebar-section {
 body.page-search .sidebar-section {
     height: 750px !important;
 }
+body.page-basket .sidebar-section {
+    height: 750px !important;
+}
+body.page-heart .sidebar-section {
+    height: 750px !important;
+}
 
 
 .user-sidebar {

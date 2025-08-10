@@ -52,7 +52,12 @@ export const AppRoutes: FC = () => {
             body.classList.add("page-products");
         } else if (location.pathname === ROUTES.SEARCH) {
             body.classList.add("page-search");
-    }
+        } else if (location.pathname === ROUTES.BASKET) {
+            body.classList.add("page-basket");
+        } else if (location.pathname === ROUTES.HEART) {
+            body.classList.add("page-heart");
+        }
+        
 
     }, [location.pathname]);
 
