@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import homeLink from '../../public/HomeSideBar.png'
 import '../styles/SideBar.css'
@@ -14,6 +15,18 @@ interface SideBarProps {}
 export const SideBar: FC<SideBarProps> = () => {
     const { setSelectedCategory } = useCategory()
     const {isSidebarOpen, closeSidebar} = useSidebar()
+
+    useEffect(() => {
+        if (isSidebarOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isSidebarOpen]);
 
     return (
         <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
