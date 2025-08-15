@@ -1,94 +1,114 @@
-/* SearchPage.css */
 .search-page {
-    max-width: 100%;
+    padding: 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    min-height: 70vh;
+}
+
+.search-page-container {
+    margin-top: 20px;
+}
+
+/* Основные стили формы поиска */
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+/* Стили для инпута */
+.search-form input {
+    background: transparent;
+    border: none;
+    color: #e0e0e0;
+    margin-left: 0.5rem;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 8px 0; /* Добавляем вертикальный padding */
+}
+
+.search-form input::placeholder {
+    color: #8a8a8a;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    flex-shrink: 0; /* Запрещаем сжатие иконки */
+}
+
+/* Управление видимостью на разных устройствах */
+.search-form.pc-hidden {
+    display: flex; /* Всегда flex, чтобы сохранить выравнивание */
+}
+
+@media (min-width: 769px) {
+    .search-form.pc-hidden {
+        visibility: hidden; /* Вместо display: none используем visibility */
+        height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        border: none;
+    }
+}
+
+/* Остальные стили остаются без изменений */
+.search-results {
+    margin-top: 30px;
+}
+
+.search-results h2 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .search-results-container {
-    width: 100%;
-}
-
-.search-results-title {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 25px;
-    font-weight: 600;
-    padding-left: 15px;
-}
-
-.search-results-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
-.search-results-grid > * {
-    flex: 0 0 calc(25% - 30px);
-    min-width: 280px;
-    max-width: 320px;
+.product-card {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+    max-width: 300px;
 }
 
-.search-empty {
-    text-align: start;
-    padding: 30px 0;
+.no-results {
+    color: #b0b0b0;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
-.empty-message {
-    color: #e74c3c;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.all-products-title {
-    color: #2c3e50;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-/* Адаптивность */
-@media (max-width: 1200px) {
-    .search-results-grid > * {
-        flex: 0 0 calc(33.333% - 30px);
-    }
-}
-
-@media (max-width: 900px) {
-    .search-results-grid > * {
-        flex: 0 0 calc(50% - 30px);
-    }
-    
-    .search-results-title,
-    .empty-message,
-    .all-products-title {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .search-page {
-        padding: 10px;
+        padding: 15px;
     }
     
-    .search-results-grid {
-        gap: 20px;
-        padding: 10px;
+    .search-form {
+        height: 45px;
     }
-    
-    .search-results-grid > * {
-        flex: 0 0 100%;
-        max-width: 400px;
-        margin: 0 auto;
+
+    .search-results-container {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .search-results-title,
-    .empty-message,
-    .all-products-title {
-        font-size: 1.4rem;
-        padding-left: 0;
+
+    .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
     }
 }

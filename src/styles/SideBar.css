@@ -197,6 +197,9 @@ body.page-heart .sidebar-section {
     height: 22px;
     object-fit: contain;
 }
+.mobile-only {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .sidebar {
@@ -214,6 +217,9 @@ body.page-heart .sidebar-section {
         overflow-y: auto; /* Добавлено для скролла внутри сайдбара */
         -webkit-overflow-scrolling: touch; /* Для плавного скролла на iOS */
     }
+    .mobile-only {
+        display: flex;
+    }
 
     .sidebar.mobile-visible {
         transform: translateX(0);
@@ -227,6 +233,15 @@ body.page-heart .sidebar-section {
         border-top: 1px solid #333;
         overflow-y: auto; /* Добавлено для скролла внутри сайдбара */
     }
+    .mobile-only.info-sedebar {
+        display: flex;
+    }
+    
+    .mobile-only.info-sedebar img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
 
     .user-sidebar {
         margin-top: 0;
@@ -239,6 +254,7 @@ body.page-heart .sidebar-section {
     .categories-container {
         height: calc(100% - 120px);
     }
+   
 
     body {
         overflow: hidden;

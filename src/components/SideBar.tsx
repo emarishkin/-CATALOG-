@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import homeLink from '../../public/HomeSideBar.png'
-import '../styles/SideBar.css'
-// import avatar from '../../public/GUEST.png'
-import info from '../../public/INFO-sidebar.png'
+import homeLink from '../../public/HomeSideBar.png';
+import '../styles/SideBar.css';
+import info from '../../public/INFO-sidebar.png';
+import searchIcon from '../../public/SEARCH.svg';
 import { categories } from "../data";
 import { ROUTES } from "../utils/routes";
 import { useSidebar } from "../Context/SidebarContext";
@@ -13,8 +13,8 @@ import { useCategory } from "../Context/CategoryContext";
 interface SideBarProps {}
 
 export const SideBar: FC<SideBarProps> = () => {
-    const { setSelectedCategory } = useCategory()
-    const {isSidebarOpen, closeSidebar} = useSidebar()
+    const { setSelectedCategory } = useCategory();
+    const { isSidebarOpen, closeSidebar } = useSidebar();
 
     useEffect(() => {
         if (isSidebarOpen) {
@@ -31,17 +31,20 @@ export const SideBar: FC<SideBarProps> = () => {
     return (
         <div className={`sidebar ${isSidebarOpen ? 'mobile-visible' : ''}`}>
             <section className="sidebar-section"> 
-                {/* <div className="user-sidebar">
-                    <img className="user-avatar" src={avatar} alt="Аватар пользователя" />
-                    <h2>Марик</h2>
-                </div> */}
-                
                 <div className="sidebar-category">
                     <div className="sidebar-top-links">
                         <div className="home-sedebar">
                             <Link to={ROUTES.HOME} onClick={closeSidebar}>
                                 <img src={homeLink} alt="Иконка дом" />
                                 <h2>Главная</h2>
+                            </Link>
+                        </div>
+
+                        {/* Кнопка поиска только для мобильных */}
+                        <div className="mobile-only info-sedebar">
+                            <Link to={ROUTES.SEARCH} onClick={closeSidebar}>
+                                <img src={searchIcon} alt="Иконка поиска" />
+                                <h2>Поиск</h2>
                             </Link>
                         </div>
 
@@ -73,8 +76,8 @@ export const SideBar: FC<SideBarProps> = () => {
                                 <Link
                                     key={category.id}
                                     to={`/categories/${category.id}`}
-                                    onClick={()=>{
-                                        closeSidebar()
+                                    onClick={() => {
+                                        closeSidebar();
                                         setSelectedCategory(category.id);
                                     }}
                                 >
@@ -87,5 +90,5 @@ export const SideBar: FC<SideBarProps> = () => {
                 </div>
             </section>
         </div>
-    )
-}
+    );
+};
