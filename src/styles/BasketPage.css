@@ -12,7 +12,7 @@
     max-width: 500px;
     width: 100%;
     padding: 40px;
-    background: #fff;
+    background: #363636;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -20,19 +20,19 @@
 .empty-basket h1 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .empty-basket h3 {
     font-size: 22px;
     margin-bottom: 30px;
-    color: #555;
+    color: #ffffff;
 }
 
 .continue-shopping {
     display: inline-block;
     padding: 15px 35px;
-    background: #1976d2;
+    background: #ff6d00;
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -42,7 +42,7 @@
 }
 
 .continue-shopping:hover {
-    background: #1565c0;
+    background: #ff5e00;
 }
 
 /* Остальные стили остаются без изменений */

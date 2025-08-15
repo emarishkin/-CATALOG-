@@ -65,8 +65,8 @@ export const products:IProduct[] = [
     },
     images: [
       "https://avatars.mds.yandex.net/get-mpic/4923482/2a0000019258f2330bf01971a1c93f75a266/orig",
-      "https://bi-bi.ru/medias/sys_master/images/images/h88/h38/9033188999198.jpg",
-      "https://cdn1.ozone.ru/s3/multimedia-u/c600/6759075522.jpg"
+      "",
+      ""
     ]
   },
   {
@@ -85,7 +85,7 @@ export const products:IProduct[] = [
     },
     images: [
       "https://i.ibb.co/7JpcY3rD/Mask-group-6.png",
-      "https://ir.ozone.ru/s3/multimedia-9/c1000/6759075537.jpg",
+      "",
       ""
     ]
   },

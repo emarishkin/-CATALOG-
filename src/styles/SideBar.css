@@ -29,7 +29,7 @@ body.page-company .sidebar-section {
 }
 
 body.page-contacts .sidebar-section {
-    height: 800px;
+    height: 715px;
 }
 
 body.page-catalog .sidebar-section {
@@ -37,7 +37,7 @@ body.page-catalog .sidebar-section {
 }
 
 body.page-checkout .sidebar-section {
-    height: 750px;
+    height: 715px;
 }
 
 body.page-products .sidebar-section {
@@ -51,7 +51,7 @@ body.page-basket .sidebar-section {
     height: 750px !important;
 }
 body.page-heart .sidebar-section {
-    height: 750px !important;
+    height: 715px !important;
 }
 
 
