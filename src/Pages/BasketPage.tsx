@@ -109,7 +109,7 @@ export const BasketPage: FC = () => {
                 </div>
 
                 <div className="helps-block">
-                    <h3 className="help-title">Нужна помощь с заказом?</h3>
+                    <h3 className="help-title-BAS">Нужна помощь с заказом?</h3>
                     <p className="help-text">Позвоните по номеру: 
                         <a href="tel:+79049337054" className="phone-link"> +7 904 933 70 54</a>
                     </p>

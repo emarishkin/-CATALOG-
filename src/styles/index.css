@@ -95,4 +95,9 @@ body {
     .main-content-wrapper {
     padding-top: 10px;
 }
+
+   .content{
+    background-color: #121212;
+    padding: 0;
+   }
 }
