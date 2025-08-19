@@ -81,7 +81,7 @@ export const SideBar: FC<SideBarProps> = () => {
                                         setSelectedCategory(category.id);
                                     }}
                                 >
-                                    <img src={category.icon} alt='иконка категории' />
+                                    {/* <img src={category.icon} alt='иконка категории' /> */}
                                     <span>{category.name}</span>
                                 </Link>
                             ))}

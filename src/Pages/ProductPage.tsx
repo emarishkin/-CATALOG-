@@ -103,7 +103,7 @@ export const ProductPage:FC = () => {
                     <div className="help-block">
                         <h3 className="help-title">Нужна помощь с заказом?</h3>
                         <p className="help-text">Позвоните по номеру: 
-                            <a href="tel:+79049337054" className="phone-link"> +7 904 933 70 54</a>
+                            <a href="tel:+79049337054" className="phone-link"> +7 937 074 48 77</a>
                         </p>
                         <div className="social-links">
                             <p className="social-text">Или просто напишите нам в чате:</p>

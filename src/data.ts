@@ -53,7 +53,7 @@ export const products:IProduct[] = [
     id: 1,
     title: "Гофра инжектора 2170 с хомутами 21700-1109175-00",
     rating: 5,
-    inStock: false,
+    inStock: true,
     quantityInLot:20,
     price: 145,
     quantity:1,

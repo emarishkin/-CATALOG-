@@ -17,7 +17,7 @@ export const ContactsAndMap:FC = () => {
                         <img style={{width:25,height:25}} src={mobila} alt="Трубка телефона" />
                     </div>
                     <p className="contact-text">Звоните по номеру: 
-                        <a href="tel:+79049337054" className="phone-link"> +7 904 933 70 54</a>
+                        <a href="tel:+79049337054" className="phone-link"> +7 937 074 48 77</a>
                     </p>
                 </div> 
                 

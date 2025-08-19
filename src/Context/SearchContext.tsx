@@ -27,7 +27,6 @@ export const SearchProvider:FC<{children:ReactNode}> = ({children}) => {
 
         const filterProducts = products.filter(product=>
            product.title.toLowerCase().includes(query.toLowerCase())
-        || product.description.toLowerCase().includes(query.toLowerCase())
         )
 
         setSearchResults(filterProducts)
