@@ -1,4 +1,4 @@
-import { useState, type FC } from "react";
+import { useState, type FC, useEffect } from "react";
 import { useSearch } from "../Context/SearchContext";
 import searchIcon from '../../public/SEARCH.svg';
 import '../styles/SearchPage.css';
@@ -6,14 +6,18 @@ import { ProductCard } from "../components/Cards/ProductCard";
 
 export const SearchPage: FC = () => {
     const [searchValue, setSearchValue] = useState("");
-    const { performSearch, searchResults } = useSearch();
+    const { performSearch, searchResults, searchQuery } = useSearch();
+
+    // Синхронизируем значение из контекста при загрузке страницы
+    useEffect(() => {
+        setSearchValue(searchQuery);
+    }, [searchQuery]);
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         setSearchValue(value);
-        if (value.trim()) {
-            performSearch(value);
-        }
+        // Выполняем поиск при каждом изменении
+        performSearch(value);
     };
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -26,7 +30,6 @@ export const SearchPage: FC = () => {
     return (
         <div className="search-page">
             <div className="search-page-container">
-                {/* Добавляем класс pc-hidden для скрытия на ПК */}
                 <form className="search-form pc-hidden" onSubmit={handleSubmit}>
                     <img src={searchIcon} alt="Иконка поиска" className="search-icon" />
                     <input
@@ -42,7 +45,7 @@ export const SearchPage: FC = () => {
                 
                 {searchResults.length > 0 ? (
                     <div className="search-results">
-                        <h2>Результаты поиска</h2>
+                        <h2>Результаты поиска {searchValue && `по запросу: "${searchValue}"`}</h2>
                         <div className="search-results-container">
                             {searchResults.map(product => (
                                 <ProductCard 
@@ -53,8 +56,10 @@ export const SearchPage: FC = () => {
                         </div>
                     </div>
                 ) : searchValue ? (
-                    <div className="no-results">Ничего не найдено</div>
-                ) : null}
+                    <div className="no-results">Ничего не найдено по запросу: "{searchValue}"</div>
+                ) : (
+                    <div className="no-results">Введите поисковый запрос</div>
+                )}
             </div>
         </div>
     );

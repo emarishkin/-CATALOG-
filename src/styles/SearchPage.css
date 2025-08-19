@@ -8,7 +8,6 @@
     margin-top: 20px;
 }
 
-/* Основные стили формы поиска */
 .search-form {
     display: flex;
     align-items: center;
@@ -22,7 +21,6 @@
     transition: all 0.3s ease;
 }
 
-/* Стили для инпута */
 .search-form input {
     background: transparent;
     border: none;
@@ -31,7 +29,7 @@
     width: 100%;
     outline: none;
     font-size: 17px;
-    padding: 8px 0; /* Добавляем вертикальный padding */
+    padding: 8px 0;
 }
 
 .search-form input::placeholder {
@@ -42,17 +40,16 @@
     width: 20px;
     height: 20px;
     opacity: 0.8;
-    flex-shrink: 0; /* Запрещаем сжатие иконки */
+    flex-shrink: 0;
 }
 
-/* Управление видимостью на разных устройствах */
-.search-form.pc-hidden {
-    display: flex; /* Всегда flex, чтобы сохранить выравнивание */
+.pc-hidden {
+    display: flex;
 }
 
 @media (min-width: 769px) {
-    .search-form.pc-hidden {
-        visibility: hidden; /* Вместо display: none используем visibility */
+    .pc-hidden {
+        visibility: hidden;
         height: 0;
         padding: 0;
         margin: 0;
@@ -61,7 +58,6 @@
     }
 }
 
-/* Остальные стили остаются без изменений */
 .search-results {
     margin-top: 30px;
 }
