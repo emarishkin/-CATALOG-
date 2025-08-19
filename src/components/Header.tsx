@@ -16,40 +16,37 @@ import { useSearch } from "../Context/SearchContext";
 export const Header: FC = () => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [searchValue, setSearchValue] = useState("");
-    let navigate = useNavigate();
-    const { performSearch, searchResults } = useSearch();
+     let navigate = useNavigate()
+     const {performSearch,searchResults} = useSearch()
     
-    const { toggleSidebar, isSidebarOpen } = useSidebar();
-    const { favoritesCount } = useFavorites();
-    const { basketCountNUM } = useBasket();
+    const {toggleSidebar,isSidebarOpen} = useSidebar()
 
-    const toggleMobileMenu = () => {
+    const {favoritesCount} = useFavorites()
+    const {basketCountNUM} = useBasket()
+
+    const toggleSearch = () => {
         setIsSearchVisible(!isSearchVisible);
-        toggleSidebar();
     };
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
-        setSearchValue(value);
-        
-        // Выполняем поиск при каждом изменении
-        performSearch(value);
-        
-        // Если есть текст, переходим на страницу поиска
-        if (value.trim()) {
-            navigate(ROUTES.SEARCH);
+        setSearchValue(e.target.value);
+        if(e.target.value.trim()){
+            performSearch(e.target.value)
+            navigate(ROUTES.SEARCH)
         }
     };
 
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (searchValue.trim()) {
+     e.preventDefault()
+     if (searchValue.trim()) {
             performSearch(searchValue);
             navigate(ROUTES.SEARCH);
-        } else if (searchResults.length > 0) {
+    } else if (searchResults.length > 0) {
             navigate(ROUTES.SEARCH);
         }
     }
+
+
 
     return (
         <header className="header">
@@ -59,7 +56,8 @@ export const Header: FC = () => {
                 </Link>
             </div>
 
-            <div className={`search-container ${isSearchVisible ? 'mobile-visible' : ''}`}>
+
+            <div className={`search-container `}>
                 <form className="search-form" onSubmit={handleSubmit} onClick={(e) => e.stopPropagation()}>
                     <img src={searchIcon} alt="Иконка поиска" className="search-icon" />
                     <input
@@ -88,9 +86,13 @@ export const Header: FC = () => {
                 </div>
             </div>
 
-            <button className={`burger-button ${isSidebarOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+            <button className={`burger-button ${isSidebarOpen ? 'active' : ''}`} onClick={()=>{
+                toggleSearch()
+                toggleSidebar()
+            }}>
                 <img src={burger} alt="Меню" />
             </button>
+
         </header>
     );
 };
