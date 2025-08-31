@@ -74,8 +74,14 @@ export const ProductPage:FC = () => {
                     <div className="product-info">
                         <div className="product-header">
                             <div className="product-isStock">
-                                <img src={currentProduct.inStock ? galka : krestik} alt="Статус наличия" />
-                                <span style={{color: currentProduct.inStock ? '#00aa07' : '#ff1100'}}>{currentProduct.inStock ? 'В наличии' : 'Нет в наличии'}</span>
+                                <img 
+                                    src={currentProduct.inStock ? galka : krestik} 
+                                    alt="Статус наличия" 
+                                    loading="lazy"
+                                />
+                                <span style={{color: currentProduct.inStock ? '#00aa07' : '#ff1100'}}>
+                                    {currentProduct.inStock ? 'В наличии' : 'Нет в наличии'}
+                                </span>
                             </div>
                             <h1 className="product-title-page">{currentProduct.title}</h1>
                         </div>
@@ -120,10 +126,10 @@ export const ProductPage:FC = () => {
                             <p className="social-text">Или просто напишите нам в чате:</p>
                             <div className="social-icons">
                                 <a href="https://t.me/mirzap63" className="social-icon">
-                                    <img src={telegramIcon} alt="Telegram" />
+                                    <img src={telegramIcon} alt="Telegram" loading="lazy" />
                                 </a>
                                 <a href="https://vk.com/mirzap63" className="social-icon">
-                                    <img src={vkIcon} alt="VK" />
+                                    <img src={vkIcon} alt="VK" loading="lazy" />
                                 </a>
                             </div>
                         </div>

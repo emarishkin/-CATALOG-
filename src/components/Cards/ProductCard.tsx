@@ -11,7 +11,6 @@ import { useFavorites } from "../../Context/FavoritesContext";
 import { useBasket } from "../../Context/BasketContext";
 import { ImageWithFallback } from "../ImageWithFallback";
 
-
 interface ProductCardProps {
     product: IProduct;
 }
@@ -60,6 +59,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                         src={isFav ? musor : heart}
                         alt={isFav ? "Удалить из избранного" : "Добавить в избранное"}
                         className="favorite-icon"
+                        loading="lazy"
                     />
                 </button>
             </div>
@@ -69,6 +69,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                     <img
                         src={product.inStock ? galochka : krestik}
                         alt={product.inStock ? 'Товар в наличии' : 'Товара нет в наличии'}
+                        loading="lazy"
                     />
                     <p>{product.inStock ? 'В наличии' : 'Нет в наличии'}</p>
                 </div>
@@ -79,7 +80,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
                         aria-label="Добавить в корзину"
                         className="basket-button"
                     >
-                        <img src={basket} alt="Корзина" />
+                        <img src={basket} alt="Корзина" loading="lazy" />
                     </button>
                 </div>
             </div>
