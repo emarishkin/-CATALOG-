@@ -9,7 +9,6 @@ import vkIcon from '../../public/VK.png'
 import galochka from '../../public/GALOCHKA.svg'
 import krestik from '../../public/KREST.svg'
 
-
 export const BasketPage: FC = () => {
     const { basketArray, basketCount, basketTotal, deleteFromBasket, clearBasket, updateQuantity } = useBasket()
 
@@ -35,55 +34,54 @@ export const BasketPage: FC = () => {
                    <button className="button-top-basket" onClick={clearBasket}>Очистить корзину</button>
                 </div>
                 
-                
                 {basketArray?.map(item => (
                     <div key={item.id} className="basket-item">
                         <div className="item-status">
                             <span className="in-stock">{item.inStock
-                             ? <div style={{display:'flex',gap:5}}><img style={{width:20,height:20}} src={galochka} alt="Галочка картинка" /><p>В наличии</p></div>
-                             : <div style={{display:'flex',gap:5}}><img style={{width:20,height:20}} src={krestik} alt="Крест картинка" /><p>Нет в наличии</p></div>
-                            
+                             ? <div className="stock-status"><img src={galochka} alt="В наличии" /><p>В наличии</p></div>
+                             : <div className="stock-status"><img src={krestik} alt="Нет в наличии" /><p>Нет в наличии</p></div>
                             }</span>
                             <span className="item-code">Код товара: {item.id}</span>
                         </div>
                         
                         <div className="item-main">
-                            <img src={item.images[0]} alt={item.title} className="item-image" />
-                            <div className="item-details">
-                                <h3 className="item-title">{item.title}</h3>
-                                <div className="item-controls">
-                                    <div className="item-quantity">
-                                        <p>Количество (от {item.quantityInLot} шт.)</p>
-                                        <div className="quantity-controls">
-                                            <button 
-                                                onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                                disabled={item.quantity <= 1}
-                                            >
-                                                -
-                                            </button>
-                                            <span>{item.quantity}</span>
-                                            <button 
-                                                onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                            >
-                                                +
-                                            </button>
-                                        </div>
-                                    </div>
-        
-                                    <div className="item-price-actions">
-                                        <p className="item-price">{item.price.toLocaleString('ru-RU')} р.</p>
+                            <div className="item-image-title-container">
+                                <img src={item.images[0]} alt={item.title} className="item-image" />
+                                <div className="item-title-container">
+                                    <h3 className="item-title">{item.title}</h3>
+                                </div>
+                            </div>
+                            
+                            <div className="item-controls">
+                                <div className="item-quantity">
+                                    <p>Количество (от {item.quantityInLot} шт.)</p>
+                                    <div className="quantity-controls">
                                         <button 
-                                            className="remove-item"
-                                            onClick={() => deleteFromBasket(item.id)}
+                                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                                            disabled={item.quantity <= 1}
                                         >
-                                            Удалить
+                                            -
+                                        </button>
+                                        <span>{item.quantity}</span>
+                                        <button 
+                                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                                        >
+                                            +
                                         </button>
                                     </div>
                                 </div>
+    
+                                <div className="item-price-actions">
+                                    <p className="item-price">{item.price.toLocaleString('ru-RU')} р.</p>
+                                    <button 
+                                        className="remove-item"
+                                        onClick={() => deleteFromBasket(item.id)}
+                                    >
+                                        Удалить
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
-                        
                     </div>
                 ))}
             </div>
