@@ -64,7 +64,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://avatars.mds.yandex.net/get-mpic/4923482/2a0000019258f2330bf01971a1c93f75a266/orig",
+      "/PicturesMainPhotoProduct/GofraInjector.png",
       "",
       ""
     ]
@@ -84,7 +84,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/7JpcY3rD/Mask-group-6.png",
+      "/PicturesMainPhotoProduct/GofraVozFilter.png",
       "",
       ""
     ]
@@ -104,7 +104,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://avatars.mds.yandex.net/get-mpic/4114383/img_id2006863117893210909.jpeg/9",
+      "/PicturesMainPhotoProduct/FilterSalon.png",
       "",
       ""
     ]
@@ -124,7 +124,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://injector-don.ru/upload/iblock/69a/l0i1iygqxxou4g1ound7quvtx3rtaz0i.jpg",
+      "/PicturesMainPhotoProduct/KrishkaRashiritelnogo.png",
       "",
       ""
     ]
@@ -144,7 +144,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/Psnctpr9/Mask-group-32.png",
+      "/PicturesMainPhotoProduct/SkrutkaRulevTyag.png",
       "",
       ""
     ]
@@ -164,7 +164,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/dspZCZtC/Mask-group-12.png",
+      "/PicturesMainPhotoProduct/Skrutka2.png",
       "",
       ""
     ]
@@ -184,7 +184,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ccrhL8qP/Mask-group-5.png",
+      "/PicturesMainPhotoProduct/ProkladkaKollectora.png",
       "",
       ""
     ]
@@ -204,7 +204,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/RGYKWXWg/Mask-group-4.png",
+      "/PicturesMainPhotoProduct/Homut1.png",
       "",
       ""
     ]
@@ -224,7 +224,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/fVhc2hGd/Mask-group-3.png",
+      "/PicturesMainPhotoProduct/Homut2.png",
       "",
       ""
     ]
@@ -244,7 +244,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/VpxtthrN/Mask-group-9.png",
+      "/PicturesMainPhotoProduct/Germetik60SER.png",
       "",
       ""
     ]
@@ -264,7 +264,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/KjCg9Mxv/Mask-group-18.png",
+      "/PicturesMainPhotoProduct/Germetik60CHER.png",
       "",
       ""
     ]
@@ -284,7 +284,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/Fb2NrmDk/Mask-group-7.png",
+      "/PicturesMainPhotoProduct/Germetik180CHER.png",
       "",
       ""
     ]
@@ -304,7 +304,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://cdn1.ozone.ru/s3/multimedia-6/6297201174.jpg",
+      "",
       "",
       ""
     ]
@@ -324,7 +324,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/3y8DP6h2/Mask-group-13.png",
+      "/PicturesMainPhotoProduct/ShlangYellow.png",
       "",
       ""
     ]
@@ -344,7 +344,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/zdcpNvF/Mask-group-25.png",
+      "/PicturesMainPhotoProduct/ShlangBlack.png",
       "",
       ""
     ]
@@ -364,7 +364,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/39dR6MgC/Mask-group-10.png",
+      "/PicturesMainPhotoProduct/ChashkaPilnik.png",
       "",
       ""
     ]
@@ -384,7 +384,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/35v0tGXD/Mask-group-16.png",
+      "/PicturesMainPhotoProduct/Derjatel.png",
       "",
       ""
     ]
@@ -404,7 +404,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/tpMDWN8Z/Mask-group-8.png",
+      "/PicturesMainPhotoProduct/RemcomolectKulica.png",
       "",
       ""
     ]
@@ -424,7 +424,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/RpqfmYRy/Mask-group-17.png",
+      "/PicturesMainPhotoProduct/Domkrat1.png",
       "",
       ""
     ]
@@ -444,8 +444,8 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/zh0T7MpF/Mask-group-22.png",
-      "https://i.ibb.co/RpqfmYRy/Mask-group-17.png",
+      "/PicturesMainPhotoProduct/Domkrat2.png",
+      "",
       ""
     ]
   },
@@ -464,7 +464,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/HDTJdKqZ/Mask-group-33.png",
+      "/PicturesMainPhotoProduct/Yravnitel1.png",
       "",
       ""
     ]
@@ -484,8 +484,8 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/9Hfy5ZKm/Mask-group-23.png",
-      "https://i.ibb.co/BVYpz3yZ/Mask-group-23-1.png",
+      "/PicturesMainPhotoProduct/RichagSupport.png",
+      "",
       ""
     ]
   },
@@ -504,7 +504,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/TxFwq9xm/Mask-group-21.png",
+      "/PicturesMainPhotoProduct/OporaSharovaya.png",
       "",
       ""
     ]
@@ -524,7 +524,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/N2WMS28j/Mask-group-19.png",
+      "/PicturesMainPhotoProduct/OtvetZamok.png",
       "",
       ""
     ]
@@ -544,7 +544,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/tTGjvHpR/Mask-group-20.png",
+      "/PicturesMainPhotoProduct/ProstavkiZadnix.png",
       "",
       ""
     ]
@@ -564,7 +564,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/0yN6Fgy4/Mask-group-11.png",
+      "/PicturesMainPhotoProduct/Kolpak.png",
       "",
       ""
     ]
@@ -584,7 +584,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/WWY2VLcj/Mask-group-24.png",
+      "/PicturesMainPhotoProduct/Yravnitel1.png",
       "",
       ""
     ]
@@ -604,7 +604,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/sdWGrqxj/Mask-group-26.png",
+      "/PicturesMainPhotoProduct/RemcomolectTormoz.png",
       "",
       ""
     ]
@@ -624,7 +624,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/HDBqQtr8/Mask-group-14.png",
+      "/PicturesMainPhotoProduct/KrishkaOrange.png",
       "",
       ""
     ]
@@ -644,7 +644,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/V1yRDLt/Mask-group-55.png",
+      "/PicturesMainPhotoProduct/ProbkaPoddona.png",
       "",
       ""
     ]
@@ -664,7 +664,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/2YZd6H7M/Mask-group-35.png",
+      "/PicturesMainPhotoProduct/Napravlayshaya4.png",
       "",
       ""
     ]
@@ -684,7 +684,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/gMdxHKcq/Mask-group-37.png",
+      "/PicturesMainPhotoProduct/Kolpak2.png",
       "",
       ""
     ]
@@ -704,7 +704,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/N691G7PP/Mask-group-39.png",
+      "/PicturesMainPhotoProduct/Kolpak3.png",
       "",
       ""
     ]
@@ -724,7 +724,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/hbhvbm3/Mask-group-38.png",
+      "/PicturesMainPhotoProduct/Kolpak4.png",
       "",
       ""
     ]
@@ -744,7 +744,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/vC6rVGGc/Mask-group-41.png",
+      "/PicturesMainPhotoProduct/Nipel.png",
       "",
       ""
     ]
@@ -764,7 +764,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ZR2FQCt8/Mask-group-40.png",
+      "/PicturesMainPhotoProduct/Ugolok1.png",
       "",
       ""
     ]
@@ -784,7 +784,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/849fxm9t/Mask-group-42.png",
+      "/PicturesMainPhotoProduct/Podshipnik1.png",
       "",
       ""
     ]
@@ -804,7 +804,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/0yYwLYMH/Mask-group-44.png",
+      "/PicturesMainPhotoProduct/Podshipnik2.png",
       "",
       ""
     ]
@@ -824,7 +824,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/vxRYG3XM/Mask-group-43.png",
+      "/PicturesMainPhotoProduct/Podshipnik2.png",
       "",
       ""
     ]
@@ -844,7 +844,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ym8KV8x7/Mask-group-51.png",
+      "/PicturesMainPhotoProduct/Prikurivatel1.png",
       "",
       ""
     ]
@@ -864,7 +864,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/BH1VHpbZ/Mask-group-52.png",
+      "/PicturesMainPhotoProduct/Prikurivatel2.png",
       "",
       ""
     ]
@@ -884,7 +884,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/dSVkZVS/Mask-group-53.png",
+      "/PicturesMainPhotoProduct/Prikurivatel3.png",
       "",
       ""
     ]
@@ -904,7 +904,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/nMFPWLJJ/Mask-group-48.png",
+      "/PicturesMainPhotoProduct/SchetkiSteklo.png",
       "",
       ""
     ]
@@ -924,7 +924,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/nMFPWLJJ/Mask-group-48.png",
+      "/PicturesMainPhotoProduct/SchetkiSteklo.png",
       "",
       ""
     ]
@@ -944,7 +944,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/twF5FYx3/Mask-group-54.png",
+      "/PicturesMainPhotoProduct/Kluch12mm.png",
       "",
       ""
     ]
@@ -964,7 +964,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/XksqBcqx/Mask-group-47.png",
+      "/PicturesMainPhotoProduct/SkobaStabilizatora1.png",
       "",
       ""
     ]
@@ -984,7 +984,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/DH10WR42/Mask-group-45.png",
+      "/PicturesMainPhotoProduct/KrepleniaAKB.png",
       "",
       ""
     ]
@@ -1004,7 +1004,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://avatars.mds.yandex.net/i?id=ea089b4bf888cdb2cb11435b1f64cdbe_l-5331692-images-thumbs&n=13",
+      "/PicturesMainPhotoProduct/SkobaStabilizatora2.png",
       "",
       ""
     ]
@@ -1024,7 +1024,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/d0Tdx1m8/Mask-group-50.png",
+      "/PicturesMainPhotoProduct/Ruchki4.png",
       "",
       ""
     ]
@@ -1044,7 +1044,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/V1yRDLt/Mask-group-55.png",
+      "/PicturesMainPhotoProduct/DatchikAvaria.png",
       "",
       ""
     ]
@@ -1064,7 +1064,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/394VsZ1P/Mask-group-56.png",
+      "/PicturesMainPhotoProduct/Nap543702.png",
       "",
       ""
     ]
@@ -1084,7 +1084,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ccn5n1fW/Mask-group-57.png",
+      "/PicturesMainPhotoProduct/Povorot783777.png",
       "",
       ""
     ]
@@ -1104,7 +1104,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ycqLTQyF/Mask-group-58.png",
+      "/PicturesMainPhotoProduct/Pov78137.png",
       "",
       ""
     ]
@@ -1124,7 +1124,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/9mstTVS1/Mask-group-59.png",
+      "/PicturesMainPhotoProduct/ProstavkiZadnix2.png",
       "",
       ""
     ]
@@ -1144,7 +1144,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/ps4nG4s/Mask-group-60.png",
+      "/PicturesMainPhotoProduct/ProkladkaGB.png",
       "",
       ""
     ]
@@ -1164,7 +1164,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/rKdLPnDZ/Mask-group-61.png",
+      "/PicturesMainPhotoProduct/KomplectProkladok.png",
       "",
       ""
     ]
@@ -1184,7 +1184,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/7tCdcBF3/Mask-group-68-2.png",
+      "/PicturesMainPhotoProduct/Uplotnitel.png",
       "",
       ""
     ]
@@ -1204,7 +1204,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/VW6d0rMc/Mask-group-64-2.png",
+      "/PicturesMainPhotoProduct/ObmankaLambda.png",
       "",
       ""
     ]
@@ -1224,7 +1224,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/39grYwkq/Mask-group-65-2.png",
+      "/PicturesMainPhotoProduct/Shaiba1.png",
       "",
       ""
     ]
@@ -1244,7 +1244,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/VYq2FVBX/Mask-group-63.png",
+      "/PicturesMainPhotoProduct/BoltiZadnix1.png",
       "",
       ""
     ]
@@ -1264,7 +1264,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/pppW47F/Mask-group-67-2.png",
+      "/PicturesMainPhotoProduct/OsiPetliZad.png",
       "",
       ""
     ]
@@ -1284,7 +1284,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/mFgxZx7D/Mask-group-66-2.png",
+      "/PicturesMainPhotoProduct/Osi4.png",
       "",
       ""
     ]
@@ -1304,7 +1304,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/VWwbcg7p/Mask-group-69-2.png",
+      "/PicturesMainPhotoProduct/KrishkaYellow.png",
       "",
       ""
     ]
@@ -1324,7 +1324,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/Z6Dnkpb6/Mask-group-71-2.png",
+      "/PicturesMainPhotoProduct/KrishkaBlack.png",
       "",
       ""
     ]
@@ -1344,7 +1344,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/hFTZXHLp/Mask-group-70-2.png",
+      "/PicturesMainPhotoProduct/KrishkaOrange22.png",
       "",
       ""
     ]
@@ -1364,7 +1364,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/jZRb5fyk/Mask-group-72-2.png",
+      "/PicturesMainPhotoProduct/RelePov793777.png",
       "",
       ""
     ]
@@ -1384,7 +1384,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/cXrPTYWJ/Mask-group-73.png",
+      "/PicturesMainPhotoProduct/RelePov2313787.png",
       "",
       ""
     ]
@@ -1404,7 +1404,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/qLQ5C0X1/Mask-group-74.png",
+      "/PicturesMainPhotoProduct/RelePov233787.png",
       "",
       ""
     ]
@@ -1424,7 +1424,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/KcpWTkrS/Mask-group-75.png",
+      "/PicturesMainPhotoProduct/PalechSupport.png",
       "",
       ""
     ]
@@ -1444,7 +1444,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/jn3mmG0/Mask-group-76-2.png",
+      "/PicturesMainPhotoProduct/NaborTrubok.png",
       "",
       ""
     ]
@@ -1464,7 +1464,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/C506vwHL/Mask-group-77.png",
+      "/PicturesMainPhotoProduct/ProkladkaKollectora2.png",
       "",
       ""
     ]
