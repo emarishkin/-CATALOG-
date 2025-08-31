@@ -10,6 +10,7 @@ import galka from '../../public/GALOCHKA.svg'
 import krestik from '../../public/KREST.svg'
 import telegramIcon from '../../public/TELEGRAM.png'
 import vkIcon from '../../public/VK.png'
+import { ImageWithFallback } from "../components/ImageWithFallback";
 
 export const ProductPage:FC = () => {
     const [quantity, setQuantity] = useState(1);
@@ -52,10 +53,20 @@ export const ProductPage:FC = () => {
             <div className="product-container">
                 <div className="images-and-infoBlock">
                     <div className="product-images">
-                        <img className="main-image" src={currentProduct.images[0]} alt="Основное изображение товара" />
+                        <ImageWithFallback 
+                            className="main-image" 
+                            src={currentProduct.images[0]} 
+                            alt="Основное изображение товара"
+                            fallbackSrc="https://placehold.co/800x600?text=Основное+изображение+не+загружено"
+                        />
                         <div className="mini-images">
                             {currentProduct.images.slice(1).map((img, index) => (
-                                img && <img key={index} src={img} alt={`Дополнительное изображение ${index + 1}`} />
+                                img && <ImageWithFallback 
+                                    key={index} 
+                                    src={img} 
+                                    alt={`Дополнительное изображение ${index + 1}`}
+                                    fallbackSrc="https://placehold.co/150x150?text=Изображение+не+загружено"
+                                />
                             ))}
                         </div>
                     </div>

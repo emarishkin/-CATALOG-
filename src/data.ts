@@ -1004,7 +1004,7 @@ export const products:IProduct[] = [
       icon: 'icon'
     },
     images: [
-      "https://i.ibb.co/cVLfM6C/Mask-group-46.png",
+      "https://avatars.mds.yandex.net/i?id=ea089b4bf888cdb2cb11435b1f64cdbe_l-5331692-images-thumbs&n=13",
       "",
       ""
     ]
